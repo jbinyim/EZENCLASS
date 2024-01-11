@@ -1,0 +1,46 @@
+/* table,
+th,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+th,
+td {
+  height: 40px;
+  width: 200px;
+}
+td {
+  text-align: center;
+} */
+
+/* th,
+td {
+  border-bottom: 1px;
+  background: gray;
+}
+td {
+  background-color: none;
+} */
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+caption {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+table,
+th,
+td {
+  text-align: center;
+  border-collapse: collapse;
+}
+table {
+  width: 700px;
+}
+th,
+td {
+  height: 30px;
+} */
