@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "kakao";
+  src: url("./font/KakaoBig-Regular-v1.0.4bf7d77.ttf");
+}
+body {
+  font-family: kakao;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#intro {
+  width: 428px;
+  height: 926px;
+  border: 1px solid black;
+}
+header div {
+  margin-top: 24px;
+  margin-left: 345px;
+}
+h1 {
+  margin-left: 30px;
+}
+header div,
+h1 {
+  gap: 19px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header,
+section {
+  gap: 34px;
+}
+footer div {
+  margin-left: 31px;
+  margin-top: 57px;
+}
+footer button {
+  font-family: kakao;
+  width: 368px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  background: #fae100;
+  font-size: 20px;
+  margin-left: 31px;
+  margin-top: 15px;
+  margin-bottom: 66px;
+}
+footer button:hover {
+  background: transparent;
+  border: 1px solid #fae100;
+}

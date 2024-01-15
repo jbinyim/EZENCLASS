@@ -1,0 +1,15 @@
+h1 + h2 {
+  color: #00f;
+}
+
+/* h2:nth-child(3) {
+  color: #fff;
+} */
+
+/* h2:nth-of-type(3) {
+  color: #fff;
+} */
+
+h1 ~ h2 {
+  background: crimson;
+}

@@ -1,0 +1,33 @@
+/* reset css*/
+/* ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  float: left;
+  padding: 15px;
+}
+li:nth-child(2n) {
+  background: crimson;
+}
+li:nth-child(2n + 1) {
+  background: teal;
+}
+li:first-child {
+  border-radius: 10px 0 0 10px;
+}
+li:last-child {
+  border-radius: 0 10px 10px 0;
+} */
+/* li:first-child > a {
+  color: red;
+} */
+h1:first-of-type {
+  color: #f00;
+}
+h2:last-of-type {
+  color: #00f;
+}
+h3:first-of-type {
+  color: #0f0;
+}

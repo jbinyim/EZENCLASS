@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="http://localhost:3000/process_login" method="get">
+      <input type="text" name="id" />
+      <input type="password" />
+      <input type="file" />
+      <input type="submit" value="로그인하기" />
+      <input type="checkbox" />
+      <input type="radio" />
+      <input type="range" />
+      <input type="week" />
+      <input type="time" />
+      <input type="month" />
+    </form>
+    <form action="">
+      <select name="selected" id="select01">
+        <option value="kimbab">김밥</option>
+        <option value="ramen">라면</option>
+        <option value="soonda">순대</option>
+        <option value="dook">떡볶이</option>
+      </select>
+      <select name="selected01" id="select02">
+        <optgroup label="햄버거">
+          <option value="0">선택하세요</option>
+          <option value="1">빅맥</option>
+          <option value="2">와퍼</option>
+          <option value="3">빅불</option>
+        </optgroup>
+        <optgroup label="음료">
+          <option value="1">콜라</option>
+          <option value="2">사이다</option>
+          <option value="3">소주</option>
+        </optgroup>
+      </select>
+      <textarea name="review" id="review01" cols="40" rows="10"></textarea>
+    </form>
+    <form action="">
+      <fieldset>
+        <legend>회원가입</legend>
+        <table>
+          <tbody>
+            <tr>
+              <td><label for="id">아이디</label></td>
+              <td><input type="id" id="id" /></td>
+            </tr>
+            <tr>
+              <td><label for="email">이메일</label></td>
+              <td><input type="email" id="email" /></td>
+            </tr>
+          </tbody>
+        </table>
+        <input type="submit" value="가입하기" />
+      </fieldset>
+    </form>
+  </body>
+</html>

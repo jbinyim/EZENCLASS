@@ -1,0 +1,21 @@
+/* h1:hover {
+  color: #f00;
+}
+h1:active {
+  color: #00f;
+}
+input:disabled {
+  background: orange;
+}
+input:enabled {
+  background: #0f0;
+} */
+input[type="checkbox"]:checked + div {
+  height: 0px;
+}
+div {
+  overflow: hidden;
+  width: 650px;
+  height: 300px;
+  transition-duration: 1s;
+}

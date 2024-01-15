@@ -1,0 +1,25 @@
+*First project 자기소개 웹 페이지!!	1.15~2.15
+> Final projeect =>개인 포폴 홈페이지
+
+- 피그마를 활용하여 wire-framing 작업
+- html, css + @
+
+1) 벤치마킹 사이트 및 레이아웃 구조 확인
+
+2) 자기소개 웹 페이지 어떤 내용으로 구성 할 것인가?
+- IA(information Archtecture) 메뉴구조도 = 사이트맵
+ex: main index > profile > education / refer > contact me
+- 피그마 이용
+
+3) Wire Frame
+- 위에서 정의한 IA 내용을 기반으로 대략적으로 어떤 페이지를 만들것인가를 시각적으로 구현
+- 스타일 가이드 정의 = 폰트사이즈 & 폰트 서체 / 메인 & 서브 컬러 / 나만의 아이콘은 어떻게 가져갈 것인가? /나만의 레이아웃
+
+4) WBS
+- working Breakdown Structure
+- 세부일정관리
+- 피그마 or 액셀
+
+5) 배포
+- 나중에 같이
+- google firebase 틀

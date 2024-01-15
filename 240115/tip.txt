@@ -1,0 +1,315 @@
+----------------------------------------------------------------
+- 잘 만든 사이트 -
+
+합목적성, 경제성, 통일성, 심미성 = 질서성(5대조건)
+
+*** 정보기준의 디자인 ***
+1. 잘만드는 사이트는 정보전달이 중요하다.
+2. 사이트 사용자가 누구인가?
+3. 아이콘 통일감(크기,선,면,두께,색,각도,앵커 포인트), 의미(메타포,은유,비유)
+4. 논리적인 성형화 구조(논리적 정보체계: 제목,요약글, 내용등의 순서)
+
+** 심미성 기준의 디자인 **
+1. 구조컬러 구별
+2. 콘텐츠의 배치
+3. 이미지의 크랍
+4. 도형의 형태(코너 처리)
+5. 주제에 맞는 서체 선정
+
+* 독창적인 디자인 *
+
+----------------------------------------------------------------
+눈누 - 폰트 무료 사이트 - (나눔스퀘어, gmaket 산스 / ttf형식)
+내컴(c드라이브) -> 윈도우 -> fonts -> 복붙
+
+- 두괄식 표현 알아두기
+----------------------------------------------------------------
+피그마에서 폰트 설치할때마다 따로 설치해야함
+: 폰트 설치 -> 피그마 다운로드 -> 설치
+
+---------------------------------------------------------------
+구글 확장 프로그램
+- colorcop : 
+
+플로그인
+- iconify, feather icon, illustrations, user profile, unsplash
+
+- slack 채팅
+
+vs code 확장자
+- Korean Language Pack for Visual Studio Code, Live Server, Material Icon Theme, One Dark Pro
+, indent-rainbow, Bracket Pair Color DLW, Auto Rename Tag, Color Picker, htmltagwrap, HTML CSS Support
+, HTML to CSS autocompletion, CSS Peek, Code Runner, Prettier - Code formatter (for, format on save)
+설정
+- tab size: 2 
+- word wrap: on
+- mouse wheel zoom
+- emmet variables: lang ko
+- auto save delay: 500
+- live server > setting: full reload: 체크
+- 브라우저 크롬
+
+
+
+woff2변환 - hi098123Tools (폰트 변환사이트)
+
+------------------------------------------------------------------
+데스크탑
+1920px x1080
+16x11 = 176
+1280-176 = 1104
+1104 / 12 = 92
+
+테블릿
+768px x1024
+16x9 = 144
+768-144 = 624
+624 / 8 = 78
+
+모바일
+360px x640
+16x5 = 80
+360-80 = 280
+280 / 4 = 70 
+
+폰트
+font 다운로드 : 윤고딕 400/500
+
+- 웹좌표계 : 좌측상단 0,0
+- 컬럼:열
+- 로우:행
+- prototype에서 스마트 애니메이션 만들때 디자인 파일(파일 이름도 포함)이 수정되면 안됨.
+ : 이름 변경시 같은 이름으로 변경, 아니면 수정한 것을 되돌리기.
+------------------------------------------------------------------
+- space between 기능
+- spread operator = 말줄임표
+-----------------------------------------------------------------------
+- html: hyper Text Markup Language
+   -> html은 Markup 형식의  hyper 기능이 탑재된 Text로 되어있는 언어
+- web Editor: 코딩 언어를 보다 쉽고 효율적으로 작성할 수 있도록 만든어놓은 프로그램
+- root folder (뿌리 폴더)
+- Gui 방식 Graphic User interface
+- CLI 방식 Command Line interface
+- 박스구조화 - 화면을 볼때 박스구조를 생각해야함
+- vs code : emmet 기능 (단축기능)
+- 명시성(clean code): 얼만큼 직관적으로 코드를 작성했는가
+- Html5 에 적용된 문법 (시멘틱 태그 = semantic tag = 의미를 부여하는 태그)
+- row : 행 / column : 열
+- 트러블슈팅 : 버그 뿐만 아니라 현재 작동 되고 있는 서비스에서 보다 효율적으로 무언가를 개선하는 행위
+> 위를 전문으로 하는 사람= 트러블슈터
+- 상대경로 : 현재 내가 작업중인 폴더를 기준으로 경로를 찾아오는 것
+ /절대경로 : 내가 작업중인 폴더가 아니라 root folder를 기준으로 경로를 찾아온느 것
+- 정규표현식 :
+* 특정값으로 끝나는 경우 $
+- 특정값으로 시작하는 경우 ^
+- 짝수 : 2n / 홀수 : 2n + 1
+---------------------------------------------------------------------------
+***CMD***
+- 특정 위치로 이동하는 명령어: cd desktop
+- 특정 폴더를 만드는 명령어: mkdir + ex)240110
+- 코드 들어가는 명령어: code .
+ 
+-------------------------------------------------------------------------
+**git**
+- 현재 작업중인 데이터의 버전관리를 도와주는 프로그램
+- 내가 현재 작업하고 있는 컴퓨터 안에 설치를 하는 프로그램
+- 현재 로컬 컴퓨터에 설치된 작업관리 프로그램
+**git-hub**
+- 로컬 컴퓨터에서 작업한 데이터를 클라우드 공간으로 호스팅하게 도와주는 장소
+1. git bash 설치
+2. vs code > 터미널 (ctrl + ~) > git bash 모드 변경
+3. 깃허브 저장공간 생성 (레파지토리 = repository)
+4. 누군가 git을 사용했던 이력이 있던 경우 리렛하고 가자
+4.1 git bash > 관리자 도구실행
+4.2 git config --system --unset credential.helper
+5. vscode > git bash 모드에서 name & email 세팅
+ > git config --global user.name jbinyim
+ > git config --global user.email jbinyim12@naver.com
+ > 내 git hub 정보가 로컬 컴퓨터에 정상적으로 세팅되었는디 확인하는 절차
+ > git config --list
+6. 내 컴퓨터에 git이라는 공간을 생성
+ > git init
+7. 나의 git 과 나의 래파지토리 주소를 연동하는 방법
+ > git remote add origin https://github.com/jbinyim/EZENCLASS.git
+8. 데이터를 git 에 올리는 방법  ------>>> 학원에서 다시 올릴때 여기부터*******
+> git add .
+9. 올라간거 확인방법
+> git status
+10. 깃허브에 올리는 데이터에 라벨을 붙이는 작업 (커밋 메세지 작성)
+ > git commit -m "240111"
+11. 레파지토리에 데이터를 컷밋 방법
+ > git push origin master
+
+git pull origin master --allow-unrelated-histories
+----------------------------------------------------------------------------
+** html **  --hyper Text Markup Language--
+- 이해먼저 -> 외워서 사용
+- 기본 구성: shift ! tab
+- 라이브서버 단축기: art L O
+- 앳: @
+- 해쉬: #
+- tag (홀태그(single tag) / 쌍태그(multi tag))
+- property(속성), value(속성값)
+- landing page : 도착해야하는 페이지
+- html 태그는 크게 2가지 부류로 나눠서 생각해볼 수 있음
+(공식적으로)
+1) block tag
+- 현재 위치한 영역의 한 줄(가로 = 행)을 전체 사용하는 태그
+ex: h(n), div, fieldset, form, hr, p, ul, ol, li
+2) inline tag
+- 현재 해당 태그가 위치한 그 영역의 한 줄을 다른 인라인 태그들과 공유해서 사용한다
+ex: img, a, br, button, label, span, textarea
+
+html5 문법:
+- 의미를 부여한 div태그를 만든것
+- semantic tag
+- semantic : 의미론적인 
+
+- 반드시 꼭 필수적으로 알아야하는 tag-
+1. Text tag
+* h1~6 : heading = 어떤 문서를 작성할 때 대표 타이틀을 지칭하고자 할때
+* p : paragraph = 단락 (특별한 의미를 부여하지 않은 문자를 삽입하는 경우 = 더미 문자열, dummy text)
+* br : break tag = 단락 줄 변경
+* hr : horizontal ruler = 단락간 선을 긋고 구분을 지어주고싶을 때
+* a : anchor = 특정 텍스트 및 이미지를 클릭할때 해당 페이지로 이동하게 만들어주는 태그
+* b : 텍스트를 두껍게 하고 싶을 때 사용하는 태그
+* mark : 특정 텍스트를 돋보이게 하기 위한 태그
+
+2. List tag
+* ul : unorder list
+* ol : order list
+* li : list
+
+3. Table tag
+** table : 테이블 태그를 작성하기 위해서 가장 부모태그
+* tr : table row = 테이블의 행을 정의할 때 사용하는 태그
+* th : table header = 각 행 혹은 열의 대표성을 띄고 있는 셀을 지칭하고자 할 때
+* td : table data = 각 행 혹은 각 열의 일반 보통의 셀을 지칭 할 떄
+* thead / tbody / tfoot : 각 table의 영역을 구분짓고 싶을때 사용하는 태그
+* caption : table 태그를 사용할 떄 해당 테이블의 제목(수평정렬)
+* figure
+* figcaption : table 태그를 사용할 때, 테이블의 제목을 입력할 수 있다(좌측정렬)
+* colgroup : 열을 그룹핑하고자 할 떄 사용하는 태그
+* col : 실제 colgroup안에 있는 각각의 열을 지칭하고자 할때
+* colspan : 열을 병합하고 싶을 떄
+* rowspan : 행을 병합하고 싶을 때
+*스타일 우선수위
+1) thead / tbody / tfoot
+2) colgroup / col
+
+4. 이미지 & 비디오 & 오디오
+** img
+ : src : 이미지경로를 가져오는 속성
+ : alt : 이미지에 대한 정보를 정의할 수 있는 속성
+ : width : 이미지의 너비(가로) 길이를 조정할 수 있는 속성
+ : height : 이미지의 높이(세로) 길이를 조정할 수 있는 속성
+* img map (https://www.image-map.net/) = map 좌표 볼수있는 사이트 , image map generator
+ map : name속성 = img usemap 속성 값
+* mockup data
+** audio, video :
+ : src: 소스 경로 가져오는 속성
+ : controls :  재생도구를 출력시켜주는 속성
+ : loop :  반복여부를 컨트롤해주는 속성
+ : autoplay :  자동재생을 컨트롤해주는 속성
+ >video : width/height : 사이즈조절
+
+5. input tag
+** form : 바깥에 커버 ex) table
+* input : 속성에 따라 화면이 달라진다
+ : text / password / file / submit / checkbox / radio / email / id
+   range / week / time / month
+* textarea : 리뷰 및 댓글 창 등 생성할때
+* select / option : 어떤 옵션을 선택하도록 하고자 할 때 사용할 수 있는 태그
+* optgroup / option : 옵션을 그룹핑하고자 할 때 사용하는 태그
+* fleldset / legend : form태그를 스타일링
+
+-----------------------------------------------------------------------------
+**css**  --Cascarding Style Sheet--
+- 스타일 적용 우선수위
+- web 반응형
+단위: px / em /
+- 버튼안에 입력되어있는 텍스트 -> 컨텐츠
+컨텐츠를 감싸안고 있는 테두리 -> 보더(border)
+컨텐츠와 보더 사이의 간격 = pading
+> 간격 ex) 5px(높이) 10px(가로)
+- h1 = 32px
+- html 기본 폰트 사이즈 16px
+- html이 기본적으로 주는 마진 존재 / h태그를 포함한 거의 대부분의 태그 본영의 마진 / 패딩
+- 정규표현식 :
+* 특정값으로 끝나는 경우 $
+- 특정값으로 시작하는 경우 ^
+- html에서 찾아온 태그를 선택자(selector)라고 부른다
+
+- 선택자의 종류:
+1) 전체선택자:	 *
+- css 하기전에 초기화
+2) 태그선택자:	 <tag>
+3) 아이디선택자:	 # (아이디 속성값)
+4) 클래스선택자:	 .(클래스 속성값)
+5) 자손선택자:	부모선택자 > 자손선택자
+   후손 선택자:	부모선택자 > 자손선택자, 부모선택자 자손선택자		둘다 사용가능
+6) 속성선택자: 	[속성값]						태그에 사용되는 속성이 다양한 경우
+7) 동위선택자:	+ (바로 다음 선택자), ~ (~부터 ~까지)	, :nth-child() (동위선택자 전체중 몇 번째), :nth-of-type() (선택한 동										           위선태자중 몇 번째)
+8) **구조선택자:	동위선택자들 가운데 가장 처음 시작하는 요소를 찾고자 할 때 : first-child
+		동위선택자들 가운데 가장 마지막에 위치한 요소를 찾고자 할 때 : last-child
+		동위선택자들 가운데 뒤에서 몇 번째 태그를 찾고자 할 때 : nth-last-child
+   **형태구조선택자:  동일한 태그 형태를 갖고 있는 동위선택자들 가운데서 구조를 따지는 선택자
+		 : nth-of-type(n) , first-of-type, last-of-type, nth-last-type(n)
+9) 반응선택자:	:hover (마우스를 올렸을때), :active (클릭했을때)
+   상태선택자:	:enabled , :disabled , :checked
+10)링크선택자:	link -> href 속성을 가지고 있는 a태그를 선택해오고자 할 때
+		visited -> 방문했던 링크를 가지고 있는 a태그를 선택해오고자 할 때
+11)문자선택자:	특정문자열의 위치 혹은 문자가 속해잇는 행을 선택해오고자 할 때
+		first-letter : 첫번째 글자를 선택해오고자 할 떄
+		first-line : 첫번째 행을 선택해오고자 할 떄
+   반응문자선택자
+*** 전후 문자 선택자***:  data-="", content: "" attr()	특정 태그의 전.후에 위치하는 공간을 활용하는 선택자
+		   - before
+		   - after
+		- 태그 뒤에 붙는 속성 = attribute
+12)부정선택자: selection
+not의 의미를 가지고 있으며, 선택자를 반대로 적용할 떄 사용
+
+
+*css3를 활용해서 코드를 작성하다보면 단위 개념*
+- px
+- em.rem
+em: element 약자 = 배수를 의미!!
+1em = 100%
+1.5em = 150%
+2em = 200%
+- %
+- vw/vh
+
+
+*CSS 스타일 중복되어서 적용되는 경우 우선적용 순위*
+
+0. 전체선택자로 스타일이 적용된 경우
+
+1. 속성값 뒤쪽에 !important가 붙어있는 경우
+(*외부 스타일값과 중복되었을 경우 -> 제이쿼리 외부플러그인 CSS vs 내가 직접 CSS)
+
+2. 태그에 직접 css스타일값을 적용하는 경우
+(인라인 스타일 시트를 적용하는 경우)
+
+3.선택자 중에서 id로 작성된 경우
+
+4. 선택자 중에ㅔ서 class로 작성된 경우
+
+5. 선택자를 태그로 지정해서 스타일을 적용한 경우
+
+6. 부모요소에 의해서 상속된 경우
+
+
+* display
+* justify-content : 가로 수평 정렬
+* align-items : 세로 수평 정렬 (높이값을 줘야함)
+* border-radius : 둥그렇게 해줌
+* float : 위로 떠서 하나식 가로로(행) 채워짐
+
+
+--------------------------------------------------------------------------------- 
+*jquery*			 : js라이브러리
+
+
+--------------------------------------------------------------------------------- 
