@@ -1,0 +1,16 @@
+/* p::selection {
+  background: #f00;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #00f;
+}
+a:link::after {
+  content: " - " attr(href);
+} */
+input:not([type="password"]) {
+  background: #f00;
+}

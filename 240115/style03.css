@@ -1,0 +1,9 @@
+#header h1 {
+  color: #f00;
+}
+#section h1 {
+  color: #0f0;
+}
+table > tbody > tr > th {
+  color: #f00;
+}
