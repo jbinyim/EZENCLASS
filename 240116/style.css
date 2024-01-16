@@ -1,0 +1,18 @@
+/* h1 {
+  color: #ff0000;
+}
+p {
+  background: hsl(33, 100%, 50%);
+}
+body {
+  background: url("https://cdnimg.melon.co.kr/cm2/artistcrop/images/002/61/143/261143_20210325180240_org.jpg?61e575e8653e5920470a38d1482d7312/melon/optimize/90")
+    top/cover no-repeat;
+} */
+#box {
+  display: inline-block;
+  background: #f00;
+  width: 300px;
+  height: 50px;
+  margin: 10px;
+  opacity: 0.5;
+}

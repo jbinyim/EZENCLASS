@@ -1,0 +1,31 @@
+/* div {
+  border: 1px solid #000;
+  box-shadow: 0px 0px 5px #000;
+}
+h1 {
+  color: #fff;
+  text-shadow: 0px 0px 5px #000;
+} */
+div {
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  /* background: linear-gradient(
+    top bottom,
+    #f85032 1%,
+    #f16f50 50%,
+    #f6290c 1%,
+    #273827 100%
+  ); */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100&1+0,1+23,1+35,1+66,0.7+80,0+100 */
+  background: linear-gradient(
+    45deg,
+    rgba(30, 87, 153, 1) 0%,
+    rgba(52, 110, 171, 1) 23%,
+    rgba(63, 122, 181, 1) 35%,
+    rgba(93, 152, 205, 1) 66%,
+    rgba(106, 166, 216, 0.7) 80%,
+    rgba(125, 185, 232, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
