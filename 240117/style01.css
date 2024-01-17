@@ -1,13 +1,68 @@
 @import url("./reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Coiny&display=swap");
 
-#main_header {
-  font-family: "Coiny", system-ui;
-}
 header {
   width: 960px;
   height: 160px;
-  border: 1px solid #f00;
   margin: 0 auto;
   position: relative;
+}
+header > #logo {
+  font-family: "Coiny", system-ui;
+  position: absolute;
+  left: 20px;
+  top: 35px;
+}
+header > #menu_gnb {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+header > #menu_gnb > ul > li {
+  float: left;
+}
+header > #menu_gnb > ul > li > a {
+  border: 1px solid #000;
+  padding: 3px 10px;
+  display: block;
+}
+header > #menu_gnb > ul > li:first-child > a {
+  border-radius: 10px 0 0 10px;
+}
+header > #menu_gnb > ul > li:last-child > a {
+  border-radius: 0 10px 10px 0;
+}
+header > #menu_lnb {
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+}
+header > #menu_lnb > ul > li {
+  float: left;
+}
+header > #menu_lnb > ul > li > a {
+  border: 1px solid #000;
+  padding: 10px 23px;
+  display: block;
+}
+header > #menu_lnb > ul > li:first-child > a {
+  border-radius: 10px 0 0 10px;
+}
+header > #menu_lnb > ul > li:last-child > a {
+  border-radius: 0 10px 10px 0;
+}
+
+section {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+section > #main {
+  width: 750px;
+  float: left;
+}
+section > #main > .article {
+  border: 1px solid #000;
+  padding: 25px 20px;
+  margin-bottom: 10px;
 }
