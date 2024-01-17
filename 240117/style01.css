@@ -1,0 +1,13 @@
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Coiny&display=swap");
+
+#main_header {
+  font-family: "Coiny", system-ui;
+}
+header {
+  width: 960px;
+  height: 160px;
+  border: 1px solid #f00;
+  margin: 0 auto;
+  position: relative;
+}
