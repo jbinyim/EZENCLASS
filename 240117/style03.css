@@ -1,0 +1,57 @@
+@import url("./reset.css");
+
+body {
+  background-image: url("./img/782b7fc18a24ee997efd9a7f02fa4bf9-bg_08072019.jpg");
+}
+
+header {
+  width: 1903px;
+  height: 80px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+#login {
+  position: absolute;
+  width: 1903px;
+  text-align: right;
+  margin-top: 22px;
+}
+header > #login > input {
+  width: 140px;
+  height: 36px;
+  border-radius: 10px;
+}
+#content {
+  width: 1903px;
+  height: 600px;
+  margin: 0 auto;
+}
+#content_header {
+  width: 1903px;
+  height: 80px;
+  text-align: center;
+  color: #fff;
+}
+#content_box {
+  width: 500px;
+  height: 450px;
+  background: #232527;
+  margin: 0 auto;
+  color: #fff;
+}
+#content > #content_box > #title {
+  text-align: center;
+}
+#content > #content_box > h2 {
+  width: 435px;
+  height: 30px;
+}
+#content > #article > .article_box > input {
+  width: 430px;
+}
+footer {
+  width: 1903px;
+  margin: 0 auto;
+  text-align: center;
+}
