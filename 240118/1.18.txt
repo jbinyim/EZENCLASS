@@ -1,0 +1,20 @@
+- 이미지 , 아이콘 
+font awesome
+flacticon
+
+- 구글 확장프로그램
+mobile simulator
+
+- css sprites generator
+
+
+
+justify-content: space-around;
+
+*inline 태그:
+- width / height 속성이 적용 x
+- margin & padding 좌.우만 적용가능
+
+*inline-block 태그:
+- width / height 속성 적용 0
+- margin & padding 전부 적용가능
