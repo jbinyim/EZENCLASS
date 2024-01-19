@@ -1,0 +1,150 @@
+@import url("./reset.css");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#wrap {
+  height: 100%;
+  width: 1280px;
+}
+
+/*header*/
+header {
+  width: 100%;
+  height: 270px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+nav span {
+  color: #656565;
+  font-size: 30px;
+  font-weight: lighter;
+  text-align: center;
+}
+nav div {
+  display: flex;
+  gap: 25px;
+}
+#search {
+  position: relative;
+  overflow: hidden;
+  padding: 0 240px 20px;
+}
+#search span {
+  position: absolute;
+  left: 270px;
+  top: 10px;
+  font-size: 30px;
+  color: #059145;
+}
+#search input {
+  width: 100%;
+  height: 63px;
+  background: none;
+  border: 3px solid #03c75a;
+  border-radius: 30px;
+}
+#search ul {
+  position: absolute;
+  display: flex;
+  right: 270px;
+  top: 10px;
+  gap: 16px;
+  font-size: 15px;
+}
+#search li:first-child {
+  font-size: 2em;
+  color: #d3d3d4;
+}
+#search li:nth-of-type(2) {
+  font-size: 15px;
+  margin: 10px 0;
+  color: #d3d3d4;
+}
+#search li:last-child {
+  font-size: 2em;
+  color: #03c75a;
+}
+
+#buttons {
+  display: flex;
+  padding: 0 270px;
+  gap: 35px;
+  text-align: center;
+  color: #059145;
+}
+#buttons .badge i {
+  font-size: 30px;
+  padding: 3px;
+  border-radius: 10px;
+  border: 1px solid #eeeeee;
+}
+
+/*section*/
+#contents .top {
+  display: flex;
+}
+#contents .top img {
+  width: 65%;
+  border: 1px solid #e3e5e8;
+  border-radius: 8px;
+}
+#contents .top span img {
+  width: 9%;
+}
+#contents .top span {
+  margin-left: 30px;
+  border: 1px solid #e3e5e8;
+  border-radius: 8px;
+  padding: 20px;
+}
+#contents .top p {
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+#contents .top input {
+  width: 380px;
+  height: 60px;
+  background: #03c75a;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+}
+#contents .top a {
+  display: inline-block;
+  font-size: 14px;
+  padding: 15px 0 0 40px;
+}
+
+#contents .middle {
+  margin-top: 15px;
+  width: 65%;
+  border: 1px solid #e3e5e8;
+  border-radius: 10px;
+}
+#contents .middle #news_title {
+  padding: 20px 0 0px 25px;
+  font-size: 18px;
+}
+#news_middle {
+  background: #f5f7f8;
+  border-radius: 8px;
+  height: 50px;
+  margin: 20px;
+  line-height: 50px;
+}
+#news_middle select {
+  background: transparent;
+  border: none;
+  margin-left: 20px;
+  font-size: 16px;
+}
