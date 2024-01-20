@@ -126,6 +126,9 @@ nav div {
 }
 
 #contents .middle {
+  display: flex;
+}
+#contents #article_left {
   margin-top: 15px;
   width: 65%;
   border: 1px solid #e3e5e8;
@@ -147,4 +150,65 @@ nav div {
   border: none;
   margin-left: 20px;
   font-size: 16px;
+}
+#news_middle a:last-child {
+  margin-left: 110px;
+  font-weight: bold;
+}
+#new_bottom table {
+  margin: 20px;
+}
+#new_bottom td img {
+  border: 1px solid #000;
+  width: 130px;
+  height: 55px;
+}
+#new_bottom {
+  margin: 20px;
+}
+#first_table {
+  display: flex;
+}
+#table .media {
+  border: 1px solid #ebebeb;
+  width: 140px;
+  height: 55px;
+  text-align: center;
+  padding: 10px 35px;
+}
+#table .media img {
+  width: 59px;
+}
+#second_table {
+  display: flex;
+}
+#third_table {
+  display: flex;
+}
+#four_table {
+  display: flex;
+}
+#first_table .one {
+  border-radius: 8px 0 0 0;
+}
+#first_table .two {
+  border-radius: 0 8px 0 0;
+}
+#four_table .three {
+  border-radius: 0 0 8px 0;
+}
+#four_table .four {
+  border-radius: 0 0 0 8px;
+}
+
+/*side*/
+#article_right {
+  margin: 15px 0 0 30px;
+}
+
+#advertisment {
+  width: 420px;
+  height: 240px;
+  border: 1px solid #e3e5e8;
+  border-radius: 8px;
 }
