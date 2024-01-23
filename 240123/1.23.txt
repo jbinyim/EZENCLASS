@@ -1,0 +1,39 @@
+웹앰 포트 포리오 제작해서 취업
+1. 필수 / Responsive Web => 반응형 웹 페이지
+- media queries 개념
+- media = 매체 (desktop/ tablet / mobile)
+- query = 질의, 질문, 요청
+
+- https://gs.statcounter.com/
+- 1920 * 1080 (desktop)
+  1366*768 (tablet)
+  390*844 (mobile)
+
+*width : 1920 ~ 1281 : big desktop
+*width : 1280 : 우리가기획한 가로 너비 사이즈
+*width : 911 : 태블릿으로 
+*width : 736 : 모바일
+
+- 미디어 쿼리 적용할때 유의사항
+=> 앞에서 정의한선택자를 그대로 사용 => 적용하고자 하는 css스타일 적용
+
+2. 파비콘 (Favicon) / 15px, 30px 45px : 확장자 png이미지
+
+
+-Dom : document object model
+-Bom : browser object model
+
+3. 웹 포토폴리오 클론(복제) 코딩
+=> 여기어때!
+=> 배포 = deploy
+
+1) 반응형 
+2) 배포
+
+배포 => 서버!!
+내가 그동안 작업한 html css js 올리기
+서버 => 월 임대비
+무료로 배포 사이트들
+
+cafe24 / 파일질라 / netlify
+aws / firebase (구글)
