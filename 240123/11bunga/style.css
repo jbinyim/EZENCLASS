@@ -1,0 +1,133 @@
+@import url("./reset.css");
+@import url("./font.css");
+
+/* common*/
+body {
+  font-family: ebunga;
+}
+main {
+  width: 100%;
+  height: 100%;
+}
+header {
+  width: 100%;
+  margin: 0 auto;
+  height: 120px;
+}
+header > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  width: 1240px;
+  margin: 0 auto;
+}
+header .bar {
+  background: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  text-align: center;
+  font-size: 25px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+header .bunga img {
+  width: 94px;
+  height: 40px;
+}
+header .search {
+  background: #fafafa;
+  border: 1px solid #dddddd;
+  border-radius: 30px;
+  width: 510px;
+  height: 50px;
+}
+header #search {
+  border: none;
+  width: 140px;
+  height: 49px;
+  background: transparent;
+  text-align: center;
+  font-family: ebunga;
+  font-size: 16px;
+}
+header #search-bar {
+  width: 297px;
+  height: 43px;
+  text-align: center;
+  font-size: 16px;
+  font-family: ebunga;
+  background: transparent;
+  border: 0;
+}
+header .manify {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  background: #eb3d40;
+}
+header #ranking {
+  border: none;
+  font-family: ebunga;
+  font-style: italic;
+  font-size: 16px;
+  width: 156px;
+  height: 24px;
+}
+header #right {
+  display: flex;
+  gap: 40px;
+}
+header .top-right {
+  font-size: 30px;
+}
+nav {
+  width: 100%;
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+nav #servicelink {
+  display: flex;
+  margin: 0 auto;
+  width: 1240px;
+  height: 66px;
+  justify-content: space-between;
+  line-height: 66px;
+  text-align: center;
+}
+#servicelink img {
+  width: 67px;
+  height: 20px;
+  margin-top: 23px;
+}
+nav ul {
+  display: flex;
+  gap: 25px;
+  font-size: 17px;
+}
+#logon {
+  display: flex;
+  gap: 30px;
+  font-size: 15px;
+}
+
+/*section*/
+section {
+  width: 100%;
+  height: 100%;
+  margin-top: 65px;
+}
+#article-main {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  background: url("./img/1.main/mainome.jpg") center no-repeat #876a60;
+}
