@@ -1,0 +1,32 @@
+@import url("./reset.css");
+
+body {
+  position: relative;
+}
+#box {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 200px;
+  background: linear-gradient(#cb60b3 0%, #db36a4 100%);
+  animation-name: rint;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}
+@keyframes rint {
+  from {
+    left: -500px;
+    transform: rotate(0deg);
+  }
+  50% {
+    left: 500px;
+  }
+  to {
+    left: 500px;
+    transform: rotate(300deg);
+  }
+}

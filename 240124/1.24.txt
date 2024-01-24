@@ -1,0 +1,40 @@
+1. CSS3 심화 내용
+- 정정직 형식의 css문법
+(레이아웃 정렬 / 선택자 / 스타일적용)
+- 애니메이션
+> 변형 : transition (시간의 제약을 가지고 무언가가 변형을 일으키는 것)
+1) transition-duration : 특정시간동안 변형효과를 적용 하고자할때
+2) transition-delay : 특정시간의 지연효과를 적용하고자 할떄
+3) transition-timing-function : 가 감속 효과를 적용하고 할떄
+4) transion-property : 특정요소의 변형값을 상이하게 적용하고자 할때
+=> 한 번에 모두 사용하고 싶다면
+=> transion property duration timing-funtion delay
+=> transion:  all 0.3s ease-in
+
+- cubic-bezier (사이트)
+
+> animation
+  animation-name: rint;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+=> 한번에 사용하고 싶다면
+=> anmation : name / duration / function / delay / count / direct
+
+> 변환 : transform (시간의 제약과는 무관하게 무언가가 변화를 일으키는 것)
+- 어떤 요소의 회전값을 적용 : rotate
+- 어떤 요소의 위치값을 적용 translate
+- 어떤 요소의 사이즈값을 적용 : scale
+- 어떤 요소의 기울기값을 적용 : skew
+
+
+=> 위 3가지 요소 한번에 사용되는 경우
+=> 3D입체 도형을 만들고자 할때
+
+css @ : 
+- @import
+- @font-face
+- @keyframes
+
+- opacity : 투명화
