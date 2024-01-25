@@ -1,0 +1,16 @@
+.parent {
+  border: 5px solid green;
+  display: flex;
+}
+.parent div {
+  width: 100px;
+  height: 50px;
+  background: crimson;
+  text-align: center;
+  color: #fff;
+}
+.child1,
+.child2,
+.child3 {
+  margin: auto;
+}

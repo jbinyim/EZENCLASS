@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+}
+
+/* header {
+  background: greenyellow;
+  color: #fff;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+}
+section {
+  display: flex;
+}
+article {
+  background: #eee;
+  flex: 3;
+}
+aside {
+  background: #ddd;
+  flex: 1;
+}
+nav {
+  background: #ccc;
+  flex: 1;
+}
+article,
+aside,
+nav {
+  height: calc(100vh - 300px);
+}
+
+footer {
+  background: gray;
+  color: #fff;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+} */
+
+/* #wrap {
+  display: flex;
+}
+aside {
+  flex: 1;
+  background: #eee;
+  height: 100vh;
+}
+section {
+  flex: 5;
+}
+section header {
+  height: 100px;
+  background: green;
+  color: #fff;
+}
+section article {
+  display: flex;
+  height: calc(100vh - 200px);
+}
+section article div:first-child {
+  flex: 2;
+  background: pink;
+}
+section article div:last-child {
+  flex: 1;
+  background: yellow;
+}
+
+section footer {
+  height: 100px;
+  background: green;
+  color: #fff;
+} */
+
+#wrap {
+  display: flex;
+}
+nav {
+  flex: 1;
+  background: #eee;
+}
+section {
+  flex: 5;
+}
+section header {
+  height: 100px;
+  background: green;
+}
+section #content {
+  display: flex;
+}
+section #content div {
+  flex: 3;
+}
+section #content div main {
+  background: yellow;
+  height: calc(100vh - 200px);
+}
+section footer {
+  background: green;
+  height: 100px;
+}
+section #content aside {
+  flex: 1;
+  background: #000;
+  color: #fff;
+}
