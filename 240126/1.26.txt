@@ -1,0 +1,15 @@
+- min-height: 해당요소의 height를 출력할 수있는 높이가 줄어들더라도 최소한의 80px만큼의 높이는 고정시키겠다는 의미
+- max-height: 해당요소의 width를 출력할 수있는 너비가 아무리 넓어지더라도 최대값 까지만 대응하겠다는 의미
+
+-em : element / 부모요소의 폰트사이즈의 의해서 결정
+=> 1em = 16px = p / h1 = 32px
+
+-rem : root element / root 최상위 부모요소
+body
+
+fallback 기법
+: 브라우져간 크로스오버 기능 가능
+: 
+
+- position
+=> static: 기본 default 값 => html에서 작성한 순서에 맞춰서 위치를 잡아주겠다
