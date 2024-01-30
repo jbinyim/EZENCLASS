@@ -1,0 +1,24 @@
+@keyframes 애니메이션 이름
+
+html, css 핵심 : 레이아웃 정렬
+
+float < flex < grid
+>flex 레이아웃 시스템을 적용하려면 부모
+>grid 레이아웃 시스템을 적용하려면 부모
+
+display: grid
+grid-template-columns: auto auto;
+grid-template-columns: 1fr 1fr;
+fr= fraction = 파편,분자
+ grid-template-rows: 100px 300px;
+
+
+축약:
+- font / background / animation / transiton / flex / flex-flow
+- grid: 열 grid-template-columns / 행 grid-template-rows
+
+flex 아이템 간격: gap
+
+grid 아이템 간격
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
