@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      var currentSlide = 0; // 시작 슬라이드 번호 (0부터 시작)
+      var totalSlides = 4; // 전체 슬라이드 개수
+
+      function showNextImage() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showImage();
+      }
+
+      function showPreviousImage() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        showImage();
+      }
+
+      function showImage() {
+        var imagePath = "image" + (currentSlide + 1) + ".jpg";
+        document.getElementById("current-slide").src = imagePath;
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="slider-container">
+      <img
+        src="./02grid/img/02/client-01.jpg"
+        class="slider-image"
+        id="current-slide"
+      />
+      <img
+        src="./02grid/img/02/client-02.jpg"
+        class="slider-image"
+        id="current-slide"
+      />
+      <img
+        src="./02grid/img/02/client-03.jpg"
+        class="slider-image"
+        id="current-slide"
+      />
+      <img
+        src="./02grid/img/02/client-04.jpg"
+        class="slider-image"
+        id="current-slide"
+      />
+      <button id="prev-btn" onclick="showPreviousImage()">&#8249; Prev</button>
+      <button id="next-btn" onclick="showNextImage()">&#8250; Next</button>
+    </div>
+  </body>
+</html>
