@@ -1,0 +1,16 @@
+.parent {
+  border: 3px solid #000;
+  background: khaki;
+  display: grid;
+  grid-template-areas: "item item . . ." "item item . . .";
+}
+.parent div {
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid #000;
+}
+.item {
+  background: crimson;
+  grid-area: item;
+}

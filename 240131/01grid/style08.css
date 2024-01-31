@@ -1,0 +1,27 @@
+.parent {
+  border: 5px solid #000;
+  background: khaki;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "header header header header" "content content . inb" "footer footer footer footer";
+}
+.parent div {
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 10px;
+}
+.header {
+  grid-area: header;
+}
+.content {
+  grid-area: content;
+}
+.inb {
+  grid-area: inb;
+}
+.footer {
+  grid-area: footer;
+}

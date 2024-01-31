@@ -1,0 +1,27 @@
+.parent {
+  border: 5px solid #000;
+  background: khaki;
+  height: 300px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto;
+}
+.parent div {
+  color: #fff;
+  border: 1px solid #000;
+  text-align: center;
+  font-size: 30px;
+}
+.item1 {
+  background: crimson;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+.item2 {
+  background: green;
+  grid-row: 1 / span 2;
+}
+.item5 {
+  background: purple;
+  grid-column: 1 / span 3;
+}

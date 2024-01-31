@@ -1,0 +1,35 @@
+* html5 & css3
+- css => 비약적인 발전
+> transtion / transform / animation
+
+- wbc: 정말 많은 것들이 바뀌었음
+=> 기존사용되고 있던 문법
+->영리추구
+
+기존에 사용하고 있던 요소들은 그대로 둔 상태에서 업그레이드가 된 새로운 무언가를 탄생
+
+SASS => SCSS 네이밍 변경 (안정화)
+
+Why SCSS
+> css가 갖지 못하는 기능!!!
+> 프로그래밍 코드를 벤치마킹!!
+
+SCSS => 확장자가 .scss
+
+cs영역
+=> 웹브라우저 : html, css, js
+=> FE : TS
+
+컴파일링을 한다
+= Compiling = 어떤한 요소를 번역해주는 역할
+= Compiler => 컴파일링을 해주는 요소
+> SCSS = > CSS
+
+
+- Live Sass Compiler : vscode 확장자
+
+*Nesting 기능 : 중첩가능
+
+*SCSS 만으로 구성된 프로젝트
+> 개인프로젝트
+> SCSS 작업 / 
