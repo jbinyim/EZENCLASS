@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background: yellowgreen;
+  text-align: center;
+}
+
+footer {
+  background: crimson;
+  text-align: center;
+}
+
+body {
+  background: #ddd;
+}/*# sourceMappingURL=style08.css.map */

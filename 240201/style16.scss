@@ -1,0 +1,29 @@
+/*common*/
+@import "reset";
+
+/*variable*/
+$pading: 50px;
+
+.container {
+  border: 5px solid gold;
+  height: 100vh;
+  padding: $pading;
+}
+.content {
+  background: #eee;
+  padding: $pading;
+  height: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 760px) {
+  .container,
+  .content {
+    height: auto;
+    @if ($pading <= 20px) {
+      padding: $pading;
+    } @else {
+      padding: $pading / 2;
+    }
+  }
+}

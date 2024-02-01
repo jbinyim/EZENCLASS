@@ -1,0 +1,21 @@
+@import "reset";
+
+/*var*/
+$fs: 15px;
+$box-magin: 50px;
+$color-primary: #000;
+
+.frame {
+  border: 1px solid $color-primary;
+  padding: ($box-magin % 36);
+  margin: calc($box-magin / 2);
+  h1 {
+    font-size: ($fs + 3);
+  }
+  p {
+    border: 1px solid $color-primary;
+    font-size: calc($fs * 2);
+    margin: ($box-magin / 3);
+    padding: calc($box-magin / 2);
+  }
+}

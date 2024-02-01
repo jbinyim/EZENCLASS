@@ -1,0 +1,23 @@
+@import "reset";
+
+$string1: "html5";
+$string2: "scss";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.welcome {
+  text-transform: uppercase;
+  &:after {
+    @if ($string1 == "html5" and $string2 == "scss") {
+      content: "welecome-" + $string1 + $string2;
+    } @else {
+      content: "you are not welcome!";
+      color: crimson;
+    }
+  }
+}

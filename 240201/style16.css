@@ -1,0 +1,37 @@
+/*common*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*variable*/
+.container {
+  border: 5px solid gold;
+  height: 100vh;
+  padding: 50px;
+}
+
+.content {
+  background: #eee;
+  padding: 50px;
+  height: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 760px) {
+  .container,
+  .content {
+    height: auto;
+    padding: 25px;
+  }
+}/*# sourceMappingURL=style16.css.map */
