@@ -1,0 +1,93 @@
+@import "reset";
+@import "font";
+
+/*common*/
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+/*========= index ============*/
+.index-section {
+  width: inherit;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+    url("./img/01index/background.jpg") center/cover no-repeat;
+  h1 {
+    font: bold 180px/1 "oneB";
+    animation: go linear 2s;
+  }
+  h2 {
+    font: 80px/1 "oneR";
+    margin: 40px 0 125px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: go linear 1s;
+  }
+  .index-btn {
+    button {
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: 2px solid #fff;
+      background: none;
+      color: #fff;
+      font: 32px/1 "oneB";
+      transition: all 0.3s;
+      &:hover {
+        background: #fff;
+        color: #000;
+      }
+    }
+  }
+}
+@keyframes go {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*============= home================*/
+.header {
+  width: inherit;
+  height: 100px;
+  border-bottom: 1px solid #000;
+  .inner {
+    width: 1450px;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      width: 100px;
+      height: 100px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .nav {
+      display: flex;
+      gap: 100px;
+      li {
+        a {
+          font: 20px/1 "oneR";
+          &:hover {
+            text-decoration: underline;
+            text-underline-offset: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*figure*/

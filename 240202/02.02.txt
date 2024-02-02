@@ -1,0 +1,25 @@
+google icons
+
+html (인라인 vs 블록 / 포지션 / 플랙스 & 그리드 + 선택자)
+css (선택자)
+scss (변수 / 탬프릿 = 믹스인 & 인클루드 / 네스팅 / if)
++ JS
+
+
+
+=>JS 라이브러리 = > 2015년 jQuery / 2014 , *React*
+=>jQuery : 실무에서 거의 안씀 => plug-in
+
+featherlight
+
+cdm = content delivery network
+
+> JS: 코드를 입력해서 UI => 하드코딩
+> jquery: 외부 플러그인을 활용해서 UI => 소프트코딩/ 가코딩
+
+* bootstrap
+* 실전예제: 웹 퍼블리셔 무조건!! 30개
+(제이쿼리)
+* Figma + html & css + jquery : 
+
+*JS > TS > React

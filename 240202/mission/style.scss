@@ -1,0 +1,56 @@
+$figma-weight: 500;
+$figma-width: 150px;
+$figma-color: #222;
+$figma-spacing: 3px;
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.figma {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  span {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #222;
+    letter-spacing: 3px;
+    font-size: 50px;
+  }
+}
+.shape {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  span {
+    background: #00f;
+    width: calc($figma-width / 2);
+    height: calc($figma-width / 2);
+    &:nth-child(1) {
+      background: #f24e1e;
+      border-radius: 50% 0 0 50%;
+    }
+    &:nth-child(2) {
+      background: #ff7262;
+      border-radius: 0 50% 50% 0;
+    }
+    &:nth-child(3) {
+      background: #a259;
+      border-radius: 50% 0 0 50%;
+    }
+    &:nth-child(4) {
+      background: #a259;
+      border-radius: 0 50% 50% 0;
+    }
+    &:nth-child(5) {
+      background: #a259;
+      border-radius: 50% 0 50% 50%;
+    }
+  }
+}
