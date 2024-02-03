@@ -75,9 +75,11 @@ li {
   }
 }
 /*============= home================*/
+/*header*/
 .header {
   width: inherit;
   height: 100px;
+  background: #fff;
   border-bottom: 1px solid #000;
 }
 .header .inner {
@@ -114,12 +116,14 @@ li {
 .home-figure {
   width: 100%;
   height: 919px;
+  overflow: hidden;
   background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("./img/02main/main1.jpg") center/cover no-repeat;
 }
 .home-figure .home-text {
   width: 1450px;
   height: 100%;
   margin: 0 auto;
+  padding: 520px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,10 +146,181 @@ li {
   font: 32px/1 "oneB";
   margin: 50px 0 60px;
 }
+.home-figure .home-text a {
+  transition: all 0.3s;
+}
 .home-figure .home-text a:hover {
-  color: #000;
+  color: #fdee1a;
 }
 .home-figure .home-text a i {
   font-size: 50px;
   margin-right: 20px;
+}
+
+/*article*/
+.project {
+  width: 1450px;
+  height: 100%;
+  margin: 170px auto 0;
+}
+.project .article-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project .article-title h1 {
+  font: 42px/1 "oneB";
+  position: relative;
+  height: 60px;
+}
+.project .article-title h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 155px;
+  height: 1px;
+  background: #000;
+}
+.project .article-title a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.project .article-title a:hover p {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+.project .article-title a p {
+  font: 20px/1 "oneR";
+}
+.project .article-title a i {
+  font-size: 20px;
+}
+.project .project-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+}
+.project .project-content .project-content-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+.project .project-content .project-content-detail .project-img-link img {
+  width: 400px;
+  height: 380px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 90px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.project .project-content .project-content-detail p {
+  font: 16px/1 "oneL";
+  margin: 25px 0 15px;
+}
+.project .project-content .project-content-detail a h2 {
+  font: 32px/1 "oneR";
+}
+.project .project-content .project-content-detail:hover {
+  transform: translateY(-50px);
+}
+
+.aboutme {
+  width: 1450px;
+  height: 100%;
+  margin: 240px auto 245px;
+}
+.aboutme .article-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+.aboutme .article-title h1 {
+  font: 42px/1 "oneB";
+  position: relative;
+  height: 60px;
+}
+.aboutme .article-title h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 155px;
+  height: 1px;
+  background: #000;
+}
+.aboutme .article-title a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.aboutme .article-title a:hover p {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+.aboutme .article-title a p {
+  font: 20px/1 "oneR";
+}
+.aboutme .article-title a i {
+  font-size: 20px;
+}
+.aboutme .aboutme-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 145px;
+}
+.aboutme .aboutme-content .aboutme-background {
+  width: 475px;
+  height: 645px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: #d4f0e4;
+}
+.aboutme .aboutme-content .aboutme-background img {
+  width: 300px;
+  height: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.aboutme .aboutme-content .aboutme-text {
+  display: flex;
+  flex-direction: column;
+}
+.aboutme .aboutme-content .aboutme-text h4 {
+  font: 20px/1 "oneR";
+}
+.aboutme .aboutme-content .aboutme-text h1 {
+  font: 42px/1 "oneB";
+  margin: 55px 0 85px;
+}
+.aboutme .aboutme-content .aboutme-text p {
+  font: 16px/1 "oneL";
+  margin-bottom: 90px;
+}
+.aboutme .aboutme-content .aboutme-text a button {
+  width: 195px;
+  height: 45px;
+  border-radius: 3px;
+  background: #000;
+  color: #fff;
+  font: 20px/1 "oneR";
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.aboutme .aboutme-content .aboutme-text a button i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.aboutme .aboutme-content .aboutme-text a button:hover {
+  background: #fff;
+  color: #000;
 }/*# sourceMappingURL=style.css.map */
