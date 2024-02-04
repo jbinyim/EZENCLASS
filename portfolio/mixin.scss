@@ -32,3 +32,24 @@
     }
   }
 }
+
+@mixin btn {
+  button {
+    width: 195px;
+    height: 45px;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    font: 20px/1 "oneR";
+    transition: all 0.3s;
+    i {
+      font-size: 20px;
+      margin-left: 10px;
+    }
+    cursor: pointer;
+    &:hover {
+      background: #fff;
+      color: #000;
+    }
+  }
+}

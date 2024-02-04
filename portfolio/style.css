@@ -323,4 +323,179 @@ li {
 .aboutme .aboutme-content .aboutme-text a button:hover {
   background: #fff;
   color: #000;
+}
+
+.mylife {
+  width: 1550px;
+  height: 100%;
+  margin: 0 auto;
+}
+.mylife .article-title {
+  width: 1450px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mylife .article-title h1 {
+  font: 42px/1 "oneB";
+  position: relative;
+  height: 60px;
+}
+.mylife .article-title h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 155px;
+  height: 1px;
+  background: #000;
+}
+.mylife .article-title a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mylife .article-title a:hover p {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+.mylife .article-title a p {
+  font: 20px/1 "oneR";
+}
+.mylife .article-title a i {
+  font-size: 20px;
+}
+.mylife .mylife-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 135px;
+}
+.mylife .mylife-content .mylife-img {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.mylife .mylife-content .mylife-img a img {
+  width: 300px;
+  height: 460px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+}
+.mylife .mylife-content .mylife-img i {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  font-size: 30px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.mylife .mylife-content .mylife-img span {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50px);
+  text-align: center;
+  font: 18px/1 "oneL";
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.mylife .mylife-content .mylife-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.mylife .mylife-content .mylife-img:hover::before {
+  opacity: 1;
+}
+.mylife .mylife-content .mylife-img:hover i, .mylife .mylife-content .mylife-img:hover span {
+  opacity: 1;
+}
+
+.contact {
+  width: 100%;
+  height: 100%;
+  margin: 245px auto 0;
+  display: flex;
+  flex-direction: column;
+  background: #fbfbfb;
+}
+.contact .contact-title {
+  margin: 200px 0 246px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.contact .contact-title h1 {
+  font: 100px/1 "oneB";
+}
+.contact .contact-title p {
+  margin: 90px 0 70px;
+  font: 16px/1 "oneL";
+}
+.contact .contact-title a button {
+  width: 195px;
+  height: 45px;
+  border-radius: 3px;
+  background: #000;
+  color: #fff;
+  font: 20px/1 "oneR";
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.contact .contact-title a button i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.contact .contact-title a button:hover {
+  background: #fff;
+  color: #000;
+}
+.contact .contact-img {
+  width: 1450px;
+  height: 300px;
+  margin: 0 auto 133px;
+  position: relative;
+}
+.contact .contact-img span img {
+  width: 150px;
+  height: 150px;
+}
+.contact .contact-img span .html-logo {
+  position: absolute;
+  top: 150px;
+  left: 0;
+}
+.contact .contact-img span .css-logo {
+  position: absolute;
+  top: 0;
+  left: 300px;
+}
+.contact .contact-img span .js-logo {
+  position: absolute;
+  top: 150px;
+  left: 600px;
+}
+.contact .contact-img span .git-logo {
+  position: absolute;
+  top: 0;
+  left: 900px;
+}
+.contact .contact-img span .firebase-logo {
+  width: 300px;
+  height: 85px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }/*# sourceMappingURL=style.css.map */
