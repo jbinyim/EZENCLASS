@@ -107,6 +107,28 @@ body {
     }
   }
 }
+/*featherlight css*/
+.featherlight .featherlight-content {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  max-height: 100%;
+}
+.featherlight .featherlight-inner {
+  width: 100%;
+  height: 100%;
+}
+.featherlight .featherlight-close-icon {
+  top: 90%;
+  left: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  font-size: 28px;
+  background: crimson;
+  text-align: center;
+  line-height: 50px;
+}
 
 /*tablet*/
 @media screen and (max-width: 1024px) {
@@ -148,27 +170,4 @@ body {
       }
     }
   }
-}
-
-/*featherlight css*/
-.featherlight .featherlight-content {
-  width: 100%;
-  height: 100%;
-  margin: 0 !important;
-  max-height: 100%;
-}
-.featherlight .featherlight-inner {
-  width: 100%;
-  height: 100%;
-}
-.featherlight .featherlight-close-icon {
-  top: 90%;
-  left: 30px;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  font-size: 28px;
-  background: crimson;
-  text-align: center;
-  line-height: 50px;
 }

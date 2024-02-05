@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+.wrap {
+  width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.header h1 span {
+  color: crimson;
+}
+.header .search-bar {
+  position: relative;
+  width: 900px;
+  height: 30px;
+}
+.header form .search {
+  width: 900px;
+  height: 30px;
+  padding-left: 20px;
+}
+.header form img {
+  width: 20px;
+  position: absolute;
+  top: 5px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav button {
+  width: 100%;
+  font-size: 18px;
+  padding: 0 30px;
+  border: none;
+}
