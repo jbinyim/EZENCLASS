@@ -70,8 +70,8 @@
     justify-content: space-between;
     align-items: center;
     a {
-      width: 100px;
-      height: 100px;
+      width: 200px;
+      height: 200px;
       img {
         width: 100%;
         height: 100%;
@@ -305,6 +305,8 @@
   display: flex;
   flex-direction: column;
   background: map-get($main-color, bg);
+  position: relative;
+  overflow: hidden;
   .contact-title {
     margin: 200px 0 246px;
     display: flex;
@@ -320,7 +322,30 @@
     a {
       @include btn;
     }
+    #contact-box {
+      position: absolute;
+      top: 50px;
+      right: -1990px;
+      width: 1450px;
+      height: 1060px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      background: #000;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+      z-index: 99;
+      transition: all 0.3s;
+      &.active {
+        right: 530px;
+      }
+      .contact-title {
+        display: flex;
+        flex-direction: column;
+      }
+    }
   }
+
   .contact-img {
     width: 1450px;
     height: 300px;

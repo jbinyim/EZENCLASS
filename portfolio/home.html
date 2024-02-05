@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
     <script
       src="https://kit.fontawesome.com/cac4ca8f2a.js"
       crossorigin="anonymous"
     ></script>
+    <!-- custom css & js -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
     <title>JUNGBIN</title>
   </head>
   <body>
@@ -15,7 +17,7 @@
       <header class="header">
         <div class="inner">
           <a href="./index.html"
-            ><img src="./img/logo/logo1-1.png" alt="logo"
+            ><img src="./img/logo/bLogo.png" alt="logo"
           /></a>
           <ul class="nav">
             <li><a href="./home.html">home</a></li>
@@ -154,12 +156,39 @@
             Feel free to contact me if you have any suggestions for contracts
             and collaborations!
           </p>
-          <a href="">
+          <a class="trigger">
             <button>
               contact
               <i class="fa-solid fa-arrow-right"></i>
             </button>
           </a>
+          <div id="contact-box">
+            <div class="contact-box-title">
+              <a class="back">
+                <i class="fa-solid fa-xmark"></i>
+              </a>
+              <h1>Contact me</h1>
+              <h4>I would love to hear from you!</h4>
+              <p>jbinyim12@naver.com</p>
+            </div>
+            <div class="contact-input">
+              <form action="http://localhost/3000/contact" method="post">
+                <span>
+                  <input type="text" />
+                  <input type="text" />
+                </span>
+                <span>
+                  <input type="text" />
+                  <input type="text" />
+                </span>
+                <span>
+                  <input type="text" />
+                </span>
+                <input type="submit" value="send message" />
+                <i class="fa-solid fa-arrow-right"></i>
+              </form>
+            </div>
+          </div>
         </div>
         <div class="contact-img">
           <span>
@@ -198,7 +227,7 @@
       <footer class="footer">
         <div class="footer-content">
           <a href="">
-            <img src="./img/logo/logo4.png" alt="" />
+            <img src="./img/logo/bLogo.png" alt="" />
           </a>
           <span class="footer-info">
             <p>010-1234-5678</p>
