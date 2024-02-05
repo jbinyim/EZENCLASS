@@ -81,8 +81,6 @@ li {
   height: 100px;
   background: #fff;
   border-bottom: 1px solid #000;
-  position: fixed;
-  z-index: 99;
 }
 .header .inner {
   width: 1450px;
@@ -118,7 +116,6 @@ li {
 .home-figure {
   width: 100%;
   height: 919px;
-  padding-top: 100px;
   overflow: hidden;
   background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("./img/02main/main1.jpg") center/cover no-repeat;
 }
@@ -133,13 +130,13 @@ li {
   color: #fff;
 }
 .home-figure .home-text h1 {
-  font: 80px/1 "oneB";
   position: relative;
+  font: 80px/1 "oneB";
 }
 .home-figure .home-text h1::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -5px;
   left: 0;
   width: 400px;
   height: 3px;
@@ -401,7 +398,6 @@ li {
   top: 50px;
   left: 50%;
   transform: translateX(-50px);
-  text-align: center;
   font: 18px/1 "oneL";
   color: #fff;
   opacity: 0;
@@ -413,7 +409,7 @@ li {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 460px;
   border-radius: 30px;
   background: rgba(0, 0, 0, 0.4);
   opacity: 0;
@@ -501,4 +497,64 @@ li {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.footer {
+  width: 100%;
+  height: 520px;
+  background: #000;
+  color: #fff;
+}
+.footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer .footer-content a {
+  height: 100px;
+  margin-top: 100px;
+}
+.footer .footer-content a img {
+  width: 100px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.footer .footer-content .footer-info {
+  width: 385px;
+  height: 15px;
+  padding: 25px 0 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer .footer-content .footer-info p {
+  font: 12px/1 "oneL";
+}
+.footer .footer-content .footer-info p::after {
+  content: "";
+  width: 1px;
+  height: 1px;
+  margin: 0 20px;
+  border: 1px solid #fff;
+}
+.footer .footer-content .footer-info p:last-child::after {
+  display: none;
+}
+.footer .footer-content .footer-link {
+  text-align: center;
+}
+.footer .footer-content .footer-link a i {
+  margin: 0 30px;
+  text-align: center;
+  font-size: 24px;
+}
+.footer .footer-content .footer-bottom {
+  margin: 95px 0 86px;
+}
+.footer .footer-content .footer-bottom p {
+  font: 12px/1rem "oneL";
 }/*# sourceMappingURL=style.css.map */

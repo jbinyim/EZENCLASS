@@ -53,3 +53,63 @@
     }
   }
 }
+@mixin foot {
+  width: 100%;
+  height: 520px;
+  background: #000;
+  color: #fff;
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    a {
+      height: 100px;
+      margin-top: 100px;
+      img {
+        width: 100px;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .footer-info {
+      width: 385px;
+      height: 15px;
+      padding: 25px 0 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      p {
+        font: 12px/1 "oneL";
+        &::after {
+          content: "";
+          width: 1px;
+          height: 1px;
+          margin: 0 20px;
+          border: 1px solid #fff;
+        }
+        &:last-child::after {
+          display: none;
+        }
+      }
+    }
+    .footer-link {
+      text-align: center;
+      a {
+        i {
+          margin: 0 30px;
+          text-align: center;
+          font-size: 24px;
+        }
+      }
+    }
+    .footer-bottom {
+      margin: 95px 0 86px;
+      p {
+        font: 12px/1rem "oneL";
+      }
+    }
+  }
+}
