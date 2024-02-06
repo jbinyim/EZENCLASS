@@ -325,8 +325,8 @@
     #contact-box {
       position: absolute;
       top: 190px;
-      right: -1990px;
-      width: 1540px;
+      right: -9990px;
+      width: 100%;
       height: 900px;
       display: flex;
       justify-content: center;
@@ -337,7 +337,7 @@
       z-index: 99;
       transition: all 0.5s;
       &.active {
-        right: 9%;
+        right: 1%;
       }
       a {
         position: absolute;
@@ -439,6 +439,7 @@
     }
   }
 }
+/*footer*/
 .footer {
   @include foot;
 }

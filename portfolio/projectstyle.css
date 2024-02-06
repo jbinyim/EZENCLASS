@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "oneR";
+  src: url("./font/ONE Mobile Regular.ttf");
+}
+@font-face {
+  font-family: "oneB";
+  src: url("./font/ONE Mobile Bold.ttf");
+}
+@font-face {
+  font-family: "oneL";
+  src: url("./font/ONE Mobile Light.ttf");
+}
+/*common*/
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+/*header*/
+.header {
+  width: inherit;
+  height: 100px;
+  background: #fff;
+  border-bottom: 1px solid #000;
+}
+.header .inner {
+  width: 1450px;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .inner a {
+  width: 200px;
+  height: 200px;
+}
+.header .inner a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header .inner .nav {
+  display: flex;
+  gap: 100px;
+}
+.header .inner .nav li a {
+  font: 20px/1 "oneR";
+}
+.header .inner .nav li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+/*body*/
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+.title h1 {
+  font: 100px/1 "oneB";
+}
+.title p {
+  font: 20px/1 "oneR";
+  color: #bdbdbd;
+  margin-top: 75px;
+}/*# sourceMappingURL=projectstyle.css.map */
