@@ -465,10 +465,10 @@ li {
 }
 .contact .contact-title #contact-box {
   position: absolute;
-  top: 50px;
+  top: 190px;
   right: -1990px;
-  width: 1450px;
-  height: 1060px;
+  width: 1540px;
+  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -476,14 +476,65 @@ li {
   background: #000;
   box-shadow: 0 0 10px rgb(0, 0, 0);
   z-index: 99;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .contact .contact-title #contact-box.active {
-  right: 530px;
+  right: 9%;
 }
-.contact .contact-title #contact-box .contact-title {
+.contact .contact-title #contact-box a {
+  position: absolute;
+  top: 50px;
+  right: 130px;
+}
+.contact .contact-title #contact-box a i {
+  font-size: 30px;
+  cursor: pointer;
+}
+.contact .contact-title #contact-box a:hover {
+  color: #fdee1a;
+}
+.contact .contact-title #contact-box .contact-box-title {
+  width: 600px;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact .contact-title #contact-box .contact-box-title h1 {
+  font: 80px/1 "oneB";
+}
+.contact .contact-title #contact-box .contact-box-title h4 {
+  margin: 10px 0;
+}
+.contact .contact-title #contact-box .contact-input {
+  width: 800px;
+}
+.contact .contact-title #contact-box .contact-input div input {
+  width: 250px;
+  height: 50px;
+  margin: 25px 25px;
+  background: none;
+  border: none;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.contact .contact-title #contact-box .contact-input div input:focus {
+  outline: none;
+}
+.contact .contact-title #contact-box .contact-input div .message {
+  width: 550px;
+}
+.contact .contact-title #contact-box .contact-input input[type=submit] {
+  background: none;
+  margin-top: 25px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font: 18px/1 "oneB";
+}
+.contact .contact-title #contact-box .contact-input input[type=submit]:hover {
+  color: #fdee1a;
 }
 .contact .contact-img {
   width: 1450px;

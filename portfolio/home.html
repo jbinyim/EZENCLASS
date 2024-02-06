@@ -163,27 +163,27 @@
             </button>
           </a>
           <div id="contact-box">
+            <a class="back">
+              <i class="fa-solid fa-xmark"></i>
+            </a>
             <div class="contact-box-title">
-              <a class="back">
-                <i class="fa-solid fa-xmark"></i>
-              </a>
               <h1>Contact me</h1>
               <h4>I would love to hear from you!</h4>
               <p>jbinyim12@naver.com</p>
             </div>
             <div class="contact-input">
               <form action="http://localhost/3000/contact" method="post">
-                <span>
-                  <input type="text" />
-                  <input type="text" />
-                </span>
-                <span>
-                  <input type="text" />
-                  <input type="text" />
-                </span>
-                <span>
-                  <input type="text" />
-                </span>
+                <div>
+                  <input type="text" placeholder="name" />
+                  <input type="text" placeholder="company" />
+                </div>
+                <div>
+                  <input type="text" placeholder="phone" />
+                  <input type="text" placeholder="email" />
+                </div>
+                <div>
+                  <input class="message" type="text" placeholder="message" />
+                </div>
                 <input type="submit" value="send message" />
                 <i class="fa-solid fa-arrow-right"></i>
               </form>

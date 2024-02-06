@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eee;
+}
+.container {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background: url("./img/model-female.png") center/cover no-repeat;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #fff;
+  border-radius: 8px;
+}
+.content-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+.content-title span:last-child {
+  font-size: 20px;
+  color: crimson;
+}
+.content-article {
+  display: flex;
+  flex-direction: column;
+}
+.content-article span i {
+  position: absolute;
+
+  right: 10px;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+}
