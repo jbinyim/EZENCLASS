@@ -93,7 +93,6 @@ li {
   width: 1450px;
   height: 100%;
   margin: 0 auto;
-  border: 1px solid #f00;
 }
 .contents article {
   display: flex;
@@ -105,6 +104,7 @@ li {
 .contents article .project-image {
   width: 500px;
   height: 400px;
+  box-shadow: 0 0 10px;
   overflow: hidden;
 }
 .contents article .project-image img {
@@ -114,7 +114,135 @@ li {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  transition: all 2s;
+}
+.contents article .project-image:hover img {
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 .contents article .project-info h2 {
   font: 32px/1 "oneR";
+}
+.contents article .project-info h1 {
+  font: 42px/1 "oneB";
+  margin: 20px 0 50px;
+}
+.contents article .project-info span {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.contents article .project-info span p {
+  font: 16px/1 "oneL";
+  margin-bottom: 100px;
+}
+.contents article .project-info a {
+  font: 18px/1 "oneB";
+  margin-right: 50px;
+}
+.contents article .project-info a:hover {
+  border-bottom: 1px solid #000;
+}
+
+/*footer*/
+.footer {
+  width: 100%;
+  height: 520px;
+  background: #000;
+  color: #fff;
+}
+.footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer .footer-content a {
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+}
+.footer .footer-content a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0;
+}
+.footer .footer-content .footer-info {
+  width: 385px;
+  height: 15px;
+  padding: 25px 0 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer .footer-content .footer-info p {
+  font: 12px/1 "oneL";
+}
+.footer .footer-content .footer-info p::after {
+  content: "";
+  width: 1px;
+  height: 1px;
+  margin: 0 20px;
+  border: 1px solid #fff;
+}
+.footer .footer-content .footer-info p:last-child::after {
+  display: none;
+}
+.footer .footer-content .footer-link {
+  text-align: center;
+}
+.footer .footer-content .footer-link a i {
+  margin: 0 30px;
+  text-align: center;
+  font-size: 24px;
+}
+.footer .footer-content .footer-bottom {
+  margin: 95px 0 86px;
+}
+.footer .footer-content .footer-bottom p {
+  font: 12px/1rem "oneL";
+}
+
+/*detail*/
+.detail {
+  border: 1px solid #f00;
+  width: 980px;
+  height: 100%;
+  margin: 230px auto 0;
+}
+.detail .detail-title {
+  display: flex;
+  justify-content: space-between;
+}
+.detail .detail-title h1 {
+  font: 80px/1 "oneB";
+}
+.detail .detail-title p {
+  font: 16px/1 "oneL";
+  margin: 35px 0;
+}
+.detail .detail-title p em {
+  font: normal 18px/1 "oneB";
+  margin-right: 20px;
+}
+.detail .detail-title span a {
+  width: 20px;
+  height: 20px;
+}
+.detail .detail-title span a i {
+  font-size: 20px;
+}
+.detail .detail-content .desktop-image {
+  margin-bottom: 50px;
+}
+.detail .detail-content .desktop-image a img {
+  width: 980px;
+  height: 660px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 10px solid #000;
 }/*# sourceMappingURL=projectstyle.css.map */
