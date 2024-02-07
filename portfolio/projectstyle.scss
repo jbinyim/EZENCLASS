@@ -11,47 +11,14 @@
 
 /*header*/
 .header {
-  width: inherit;
-  height: 100px;
-  background: #fff;
-  border-bottom: 1px solid #000;
-  .inner {
-    width: 1450px;
-    height: inherit;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    a {
-      width: 200px;
-      height: 200px;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-    .nav {
-      display: flex;
-      gap: 100px;
-      li {
-        a {
-          font: 20px/1 "oneR";
-          &:hover {
-            text-decoration: underline;
-            text-underline-offset: 8px;
-          }
-        }
-      }
-    }
-  }
+  @include header;
 }
 /*body*/
 .title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 150px;
+  margin: 230px 0 335px;
   h1 {
     font: 100px/1 "oneB";
   }
@@ -59,5 +26,36 @@
     font: 20px/1 "oneR";
     color: #bdbdbd;
     margin-top: 75px;
+  }
+}
+
+/*content*/
+.contents {
+  width: 1450px;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid #f00;
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    margin-bottom: 430px;
+    .project-image {
+      width: 500px;
+      height: 400px;
+      overflow: hidden;
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+    .project-info {
+      h2 {
+        font: 32px/1 "oneR";
+      }
+    }
   }
 }
