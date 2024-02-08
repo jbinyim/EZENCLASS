@@ -2,5 +2,5 @@ html에서 항상 jquery가 위에있어야 한다.
 
 1. scrollTo (누르면 스크롤 형식으로 이동한다)
 2. fullpage (스크롤하면 애니메이션 작동)
-3. parallax
+3. parallax (입체형식으로 스크롤)
 4. wow
