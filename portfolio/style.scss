@@ -9,6 +9,7 @@
   height: 100%;
 }
 
+/*** desktop ***/
 /*========= index ============*/
 .index-section {
   width: inherit;
@@ -17,6 +18,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: #fff;
   background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
     url("./img/01index/background.jpg") center/cover no-repeat;
@@ -416,4 +418,33 @@
 /*footer*/
 .footer {
   @include foot;
+}
+
+/*** tablet ***/
+@media screen and (max-width: 1024px) {
+  .index-section {
+    h1 {
+      font: 130px/1 "oneB";
+    }
+    h2 {
+      font: 70px/1 "oneR";
+    }
+  }
+}
+/*** mobile ***/
+@media screen and (max-width: 768px) {
+  .index-section {
+    h1 {
+      font: 60px/1 "oneB";
+    }
+    h2 {
+      font: 35px/1 "oneR";
+      margin-bottom: 50px;
+    }
+    .index-btn {
+      button {
+        font: 20px/1 "oneB";
+      }
+    }
+  }
 }

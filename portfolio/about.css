@@ -76,9 +76,8 @@ li {
 .my {
   width: 100%;
   height: 950px;
-  margin-top: 80px;
   display: flex;
-  margin-bottom: 200px;
+  margin: 80px 0 200px;
 }
 .my .my-info {
   width: 50%;
