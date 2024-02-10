@@ -483,7 +483,7 @@ li {
   transition: all 0.5s;
 }
 .contact .contact-title #contact-box.active {
-  right: 1%;
+  right: 0;
 }
 .contact .contact-title #contact-box a {
   position: absolute;
@@ -536,9 +536,17 @@ li {
   color: #fff;
   cursor: pointer;
   font: 18px/1 "oneB";
+  transition: all 0.3s;
 }
 .contact .contact-title #contact-box .contact-input input[type=submit]:hover {
   color: #fdee1a;
+}
+.contact .contact-title #contact-box .contact-input input[type=submit]:hover ~ i {
+  color: #fdee1a;
+  margin-left: 10px;
+}
+.contact .contact-title #contact-box .contact-input i {
+  transition: all 0.3s;
 }
 .contact .contact-img {
   width: 1450px;

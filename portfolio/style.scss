@@ -304,7 +304,7 @@
       z-index: 99;
       transition: all 0.5s;
       &.active {
-        right: 1%;
+        right: 0;
       }
       a {
         position: absolute;
@@ -358,9 +358,17 @@
           color: #fff;
           cursor: pointer;
           font: 18px/1 "oneB";
+          transition: all 0.3s;
           &:hover {
             color: map-get($main-color, click);
+            & ~ i {
+              color: map-get($main-color, click);
+              margin-left: 10px;
+            }
           }
+        }
+        i {
+          transition: all 0.3s;
         }
       }
     }

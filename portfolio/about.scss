@@ -1,0 +1,126 @@
+@import "reset";
+@import "font";
+@import "mixin";
+@import "variables";
+
+/*common*/
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+/*header*/
+.header {
+  @include header;
+}
+
+/*my info*/
+.my {
+  width: 100%;
+  height: 950px;
+  margin-top: 80px;
+  display: flex;
+  margin-bottom: 200px;
+  .my-info {
+    width: 50%;
+    height: 100%;
+    background: map-get($main-color, darkb);
+    .my-info-box {
+      margin-left: 30%;
+      width: 55%;
+      height: 100%;
+      color: #fff;
+      padding-top: 130px;
+      h2 {
+        font: normal 18px/1 "oneB";
+        margin-bottom: 50px;
+      }
+      h1 {
+        font: normal 80px/1.1 "oneB";
+        margin-bottom: 250px;
+      }
+      p {
+        font: 18px/1 "oneB";
+        margin-bottom: 30px;
+      }
+      li {
+        font: 16px/1 "oneL";
+        margin-bottom: 15px;
+        transition: all 0.3s;
+        i {
+          font-size: 24px;
+          margin-right: 50px;
+          text-align: center;
+        }
+        &:last-child:hover {
+          color: map-get($main-color, mint);
+        }
+      }
+    }
+  }
+  .my-image {
+    width: 50%;
+    height: 100%;
+    background: map-get($main-color, mint);
+    display: flex;
+    align-items: center;
+    img {
+      width: 450px;
+      height: 660px;
+      object-fit: cover;
+      margin-left: 280px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    }
+  }
+}
+.qa {
+  width: 1450px;
+  height: 100%;
+  margin: 0 auto;
+  h1 {
+    text-align: center;
+    font: 80px/1 "oneR";
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #000;
+  }
+  .qa-box {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto 300px;
+    .title {
+      padding: 5px;
+      font: 25px/1 "oneR";
+      margin-bottom: 30px;
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover {
+        color: map-get($main-color, darkb);
+      }
+      &::after {
+        content: "\f105";
+        font-family: "fontawesome";
+        float: right;
+      }
+      &.active::after {
+        transform: rotate(90deg);
+        color: map-get($main-color, click);
+      }
+      &:hover,
+      &.active {
+        background: map-get($main-color, darkb);
+        color: #fff;
+      }
+    }
+    .desc {
+      margin-bottom: 30px;
+      padding: 5px;
+      font: 20px/2rem "oneL";
+      letter-spacing: 2px;
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
