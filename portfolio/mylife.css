@@ -72,117 +72,91 @@ li {
   text-underline-offset: 8px;
 }
 
-/*my info*/
-.my {
-  width: 100%;
-  height: 950px;
+/* search */
+.life-search {
+  margin: 140px 0 120px;
   display: flex;
-  margin: 80px 0 200px;
+  justify-content: center;
 }
-.my .my-info {
-  width: 50%;
-  height: 100%;
-  background: #2a3033;
+.life-search form {
+  position: relative;
 }
-.my .my-info .my-info-box {
-  margin-left: 30%;
-  width: 55%;
-  height: 100%;
-  color: #fff;
-  padding-top: 130px;
+.life-search form input {
+  width: 685px;
+  height: 60px;
+  border: 3px solid #003087;
+  border-radius: 30px;
+  padding: 0 20px;
 }
-.my .my-info .my-info-box h2 {
-  font: normal 18px/1 "oneB";
-  margin-bottom: 50px;
-}
-.my .my-info .my-info-box h1 {
-  font: normal 80px/1.1 "oneB";
-  margin-bottom: 250px;
-}
-.my .my-info .my-info-box p {
-  font: 18px/1 "oneB";
-  margin-bottom: 30px;
-}
-.my .my-info .my-info-box li {
-  font: 16px/1 "oneL";
-  margin-bottom: 15px;
+.life-search form i {
+  position: absolute;
+  top: 35%;
+  right: 30px;
+  font-size: 20px;
+  color: #003087;
+  cursor: pointer;
   transition: all 0.3s;
 }
-.my .my-info .my-info-box li i {
-  font-size: 24px;
-  margin-right: 50px;
-  text-align: center;
-}
-.my .my-info .my-info-box li:last-child:hover {
-  color: #d4f0e4;
-}
-.my .my-image {
-  width: 50%;
-  height: 100%;
-  background: #d4f0e4;
-  display: flex;
-  align-items: center;
-}
-.my .my-image img {
-  width: 450px;
-  height: 660px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-left: 280px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+.life-search form i:hover {
+  font-size: 33px;
+  top: 25%;
+  right: 30px;
+  color: #000;
 }
 
-.qa {
-  width: 1450px;
-  height: 100%;
-  margin: 0 auto;
+.life-title {
+  margin-bottom: 120px;
 }
-.qa h1 {
-  text-align: center;
-  font: 80px/1 "oneR";
-  padding-bottom: 10px;
-  margin-bottom: 50px;
-  border-bottom: 1px solid #000;
+.life-title ul {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-left: 100px;
 }
-.qa .qa-box {
-  width: 1000px;
-  height: 100%;
-  margin: 0 auto 300px;
-}
-.qa .qa-box .title {
-  padding: 5px;
-  font: 25px/1 "oneR";
-  margin-bottom: 30px;
+.life-title ul li {
   cursor: pointer;
-  transition: all 0.5s;
+  font: 32px/1 "oneB";
+  padding-right: 100px;
+  border-right: 1px solid #000;
 }
-.qa .qa-box .title:hover {
-  color: #2a3033;
+.life-title ul li:last-child {
+  border: none;
 }
-.qa .qa-box .title::after {
-  content: "\f105";
-  font-family: "fontawesome";
-  float: right;
+.life-title ul li.active {
+  color: #003087;
+  font: 35px/1 "oneB";
 }
-.qa .qa-box .title.active::after {
-  transform: rotate(90deg);
-  color: #fdee1a;
+
+.life-image {
+  margin-bottom: 300px;
 }
-.qa .qa-box .title:hover, .qa .qa-box .title.active {
-  background: #2a3033;
-  color: #fff;
-}
-.qa .qa-box .desc {
-  margin-bottom: 30px;
-  padding: 5px;
-  font: 20px/2rem "oneL";
-  letter-spacing: 2px;
+.life-image .content {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
   display: none;
 }
-.qa .qa-box .desc.active {
+.life-image .content.active {
   display: block;
 }
+.life-image .content div {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 70px;
+}
+.life-image .content div span img {
+  width: 315px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+}
+.life-image .content div span p a {
+  font: 20px/1 "oneB";
+}
 
+/*footer*/
 .footer {
   width: 100%;
   height: 520px;
@@ -243,4 +217,4 @@ li {
 }
 .footer .footer-content .footer-bottom p {
   font: 12px/1rem "oneL";
-}/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=mylife.css.map */

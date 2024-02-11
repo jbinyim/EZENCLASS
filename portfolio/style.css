@@ -117,6 +117,12 @@ li {
   text-decoration: underline;
   text-underline-offset: 8px;
 }
+.header .bar {
+  display: none;
+}
+.header #gnb {
+  display: none;
+}
 
 /*figure*/
 .home-figure {
@@ -653,11 +659,28 @@ li {
 
 /*** tablet ***/
 @media screen and (max-width: 1024px) {
+  /*index*/
   .index-section h1 {
     font: 130px/1 "oneB";
   }
   .index-section h2 {
     font: 70px/1 "oneR";
+  }
+  /*header*/
+  .header .inner {
+    position: relative;
+  }
+  .header .inner .bar {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 730px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .header .inner .nav {
+    display: none;
   }
 }
 /*** mobile ***/
@@ -671,5 +694,18 @@ li {
   }
   .index-section .index-btn button {
     font: 20px/1 "oneB";
+  }
+  /*header*/
+  .header .inner {
+    position: relative;
+  }
+  .header .inner .bar {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
+  .header .inner .nav {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

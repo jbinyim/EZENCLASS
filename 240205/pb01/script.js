@@ -1,15 +1,16 @@
-// html에서 작성한 선택자를 불러올때 항상 "$"
-// template literal => $
+// html에서 작성한 요소를 선택자로 불러오고자 할 때!! 항상 "$"
+// template literal => js $
 
-// $(".testimorial-pic img").click(function () {
+// $(".testimonial-pic img").click(function () {
 //   $(this).addClass("active");
 //   $(this).siblings().removeClass("active");
-//   $(".testimorial .content").removeClass("active");
+//   $(".testimonial .content").removeClass("active");
 //   $("#" + $(this).attr("data-alt")).addClass("active");
 // });
 
-const pics = document.querySelectorAll(".testimorial-pic img");
-const contents = document.querySelectorAll(".testimorial content");
+const pics = document.querySelectorAll(".testimonial-pic img");
+const contents = document.querySelectorAll(".testimonial .content");
+
 pics.forEach((pic) => {
   pic.addEventListener("click", function () {
     function siblings(t) {
@@ -25,7 +26,7 @@ pics.forEach((pic) => {
       content.classList.remove("active");
     });
     const targetContentId = this.getAttribute("data-alt");
-    const targetContent = document.querySelector("#${targetContentId}");
+    const targetContent = document.querySelector(`#${targetContentId}`);
     if (targetContent) {
       targetContent.classList.add("active");
     }
