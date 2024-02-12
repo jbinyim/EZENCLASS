@@ -311,7 +311,7 @@ li {
   font: 20px/1 "oneR";
 }
 .aboutme .aboutme-content .aboutme-text h1 {
-  font: 42px/1 "oneB";
+  font: 42px/1.3 "oneB";
   margin: 55px 0 85px;
 }
 .aboutme .aboutme-content .aboutme-text p {
@@ -325,7 +325,7 @@ li {
   background: #000;
   color: #fff;
   font: 20px/1 "oneR";
-  transition: all 0.3s;
+  transition: all 0.5s;
   cursor: pointer;
 }
 .aboutme .aboutme-content .aboutme-text a button i {
@@ -464,7 +464,7 @@ li {
   background: #000;
   color: #fff;
   font: 20px/1 "oneR";
-  transition: all 0.3s;
+  transition: all 0.5s;
   cursor: pointer;
 }
 .contact .contact-title a button i {
@@ -674,13 +674,77 @@ li {
     display: block;
     position: absolute;
     top: 50%;
-    right: 730px;
+    right: 52%;
     transform: translateY(-50%);
     font-size: 20px;
     cursor: pointer;
+    z-index: 9999;
+  }
+  .header .inner #gnb {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -330px;
+    width: 330px;
+    height: 100vh;
+    padding: 80px 20px 0 0;
+    background: #fff;
+    text-align: right;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: 0.3s;
+  }
+  .header .inner #gnb.active {
+    right: 0;
+  }
+  .header .inner #gnb a {
+    color: #000;
+    display: block;
+    padding: 16px;
+    font-size: 18px;
   }
   .header .inner .nav {
     display: none;
+  }
+  /*article*/
+  .project {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .project .project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .aboutme {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .aboutme .aboutme-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .aboutme .aboutme-content .aboutme-background {
+    height: 545px;
+  }
+  .aboutme .aboutme-text {
+    width: 475px;
+    height: 545px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #2a3033;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  .mylife {
+    width: 100%;
+  }
+  .mylife .article-title {
+    width: 100%;
+    padding: 0 50px;
   }
 }
 /*** mobile ***/
@@ -702,10 +766,29 @@ li {
   .header .inner .bar {
     display: block;
     position: absolute;
-    top: 0;
-    left: 30%;
+    top: 50%;
+    left: 22%;
   }
   .header .inner .nav {
     display: none;
+  }
+  /*article*/
+  .project .article-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+  .project .project-content .project-content-detail .project-img-link img {
+    width: 300px;
+    height: 280px;
+  }
+  .aboutme .article-title {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutme .aboutme-content .aboutme-background img {
+    width: 250px;
+    height: 350px;
   }
 }/*# sourceMappingURL=style.css.map */
