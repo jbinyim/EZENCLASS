@@ -244,9 +244,9 @@
       }
       span {
         position: absolute;
-        top: 50px;
+        top: 10%;
         left: 50%;
-        transform: translateX(-50px);
+        transform: translateX(-50%);
         font: 18px/1 "oneL";
         color: #fff;
         opacity: 0;
@@ -442,6 +442,7 @@
   .header {
     .inner {
       position: relative;
+      overflow: hidden;
       .bar {
         display: block;
         position: absolute;
@@ -519,6 +520,28 @@
       width: 100%;
       padding: 0 50px;
     }
+    .mylife-content {
+      width: 1024px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      .mylife-img {
+        span {
+          display: none;
+        }
+        i {
+          display: none;
+        }
+        &::before {
+          display: none;
+        }
+      }
+      .mylife-img:last-child {
+        display: none;
+      }
+    }
   }
 }
 /*** mobile ***/
@@ -583,6 +606,14 @@
           height: 350px;
         }
       }
+    }
+  }
+  .mylife {
+    .article-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
     }
   }
 }

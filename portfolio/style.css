@@ -407,9 +407,9 @@ li {
 }
 .mylife .mylife-content .mylife-img span {
   position: absolute;
-  top: 50px;
+  top: 10%;
   left: 50%;
-  transform: translateX(-50px);
+  transform: translateX(-50%);
   font: 18px/1 "oneL";
   color: #fff;
   opacity: 0;
@@ -669,6 +669,7 @@ li {
   /*header*/
   .header .inner {
     position: relative;
+    overflow: hidden;
   }
   .header .inner .bar {
     display: block;
@@ -746,6 +747,26 @@ li {
     width: 100%;
     padding: 0 50px;
   }
+  .mylife .mylife-content {
+    width: 1024px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .mylife .mylife-content .mylife-img span {
+    display: none;
+  }
+  .mylife .mylife-content .mylife-img i {
+    display: none;
+  }
+  .mylife .mylife-content .mylife-img::before {
+    display: none;
+  }
+  .mylife .mylife-content .mylife-img:last-child {
+    display: none;
+  }
 }
 /*** mobile ***/
 @media screen and (max-width: 768px) {
@@ -790,5 +811,11 @@ li {
   .aboutme .aboutme-content .aboutme-background img {
     width: 250px;
     height: 350px;
+  }
+  .mylife .article-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
