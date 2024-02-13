@@ -1,5 +1,12 @@
+const bar = document.querySelector(".bar");
+const gnb = document.querySelector("#gnb");
 const lists = document.querySelectorAll(".list li");
 const contents = document.querySelectorAll(".life-image .content");
+
+bar.addEventListener("click", () => {
+  gnb.classList.toggle("active");
+  bar.classList.toggle("active");
+});
 
 lists.forEach((list) => {
   list.addEventListener("click", function () {

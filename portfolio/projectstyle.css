@@ -71,6 +71,12 @@ li {
   text-decoration: underline;
   text-underline-offset: 8px;
 }
+.header .bar {
+  display: none;
+}
+.header #gnb {
+  display: none;
+}
 
 /*body*/
 .title {
@@ -259,7 +265,7 @@ li {
   height: 660px;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 10px solid #000;
+  border: 5px solid #000;
 }
 .detail .detail-content .desktop-image a::before {
   content: "";
@@ -297,6 +303,7 @@ li {
   width: 980px;
   height: 200px;
   border: 1px solid #000;
+  border-radius: 20px;
   margin-bottom: 200px;
 }
 .detail .detail-content .description-detail p {
@@ -343,4 +350,175 @@ li {
 }
 .detail .detail-content .description-tablet-mobile .mobile img {
   width: 300px;
+}
+
+/*** tablet ***/
+@media screen and (max-width: 1024px) {
+  .wrap {
+    overflow-x: hidden;
+  }
+  /*header*/
+  .header .inner {
+    position: relative;
+    overflow: hidden;
+  }
+  .header .inner .bar {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 52%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  .header .inner #gnb {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -330px;
+    width: 330px;
+    height: 100vh;
+    padding: 80px 20px 0 0;
+    background: #fff;
+    text-align: right;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: 0.3s;
+  }
+  .header .inner #gnb.active {
+    right: 0;
+  }
+  .header .inner #gnb a {
+    color: #000;
+    display: block;
+    padding: 16px;
+    font-size: 18px;
+  }
+  .header .inner .nav {
+    display: none;
+  }
+  .title {
+    margin-bottom: 150px;
+  }
+  .contents {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contents article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 200px;
+  }
+  .contents .project02 .project-info {
+    order: 2;
+  }
+  .contents .project02 .project-image {
+    order: 1;
+  }
+  .detail {
+    width: 100%;
+    margin: 200px auto 0;
+  }
+  .detail .detail-title {
+    padding: 0 10%;
+  }
+  .detail .detail-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .detail .detail-content .desktop-image a {
+    width: 700px;
+    height: 500px;
+  }
+  .detail .detail-content .desktop-image a img {
+    width: 700px;
+    height: 500px;
+  }
+  .detail .detail-content .description {
+    gap: 90px;
+  }
+  .detail .detail-content .description-detail {
+    width: 700px;
+    margin-bottom: 150px;
+  }
+  .detail .detail-content .description-tablet-mobile {
+    gap: 50px;
+  }
+}
+/*** mobile ***/
+@media screen and (max-width: 768px) {
+  .header .inner {
+    position: relative;
+  }
+  .header .inner .bar {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 22%;
+  }
+  .title h1 {
+    font: 70px/1 "oneB";
+  }
+  .title p {
+    font: 16px/1 "oneR";
+  }
+  .contents article .project-image {
+    width: 300px;
+    height: 300px;
+  }
+  .contents article .project-info h2 {
+    font: 20px/1 "oneR";
+  }
+  .detail {
+    width: 100%;
+  }
+  .detail .detail-title h1 {
+    font: 50px/1 "oneB";
+  }
+  .detail .detail-title p {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font: 14px/1 "oneL";
+  }
+  .detail .detail-title p em {
+    font: 16px/1 "oneB";
+  }
+  .detail .detail-content .desktop-image a {
+    width: 300px;
+    height: 200px;
+  }
+  .detail .detail-content .desktop-image a img {
+    width: 300px;
+    height: 200px;
+  }
+  .detail .detail-content .description {
+    gap: 0;
+    margin: 0 auto;
+  }
+  .detail .detail-content .description p b {
+    display: block;
+    margin: 5px 0;
+  }
+  .detail .detail-content .description .description-link a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .detail .detail-content .description-detail {
+    width: 300px;
+    height: 300px;
+    margin: 50px 0 100px;
+  }
+  .detail .detail-content .description-tablet-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .detail .detail-content .description-tablet-mobile div img {
+    width: 300px;
+  }
 }/*# sourceMappingURL=projectstyle.css.map */

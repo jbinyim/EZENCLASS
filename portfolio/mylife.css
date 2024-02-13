@@ -71,6 +71,12 @@ li {
   text-decoration: underline;
   text-underline-offset: 8px;
 }
+.header .bar {
+  display: none;
+}
+.header #gnb {
+  display: none;
+}
 
 /* search */
 .life-search {
@@ -217,4 +223,65 @@ li {
 }
 .footer .footer-content .footer-bottom p {
   font: 12px/1rem "oneL";
+}
+
+/*** tablet ***/
+@media screen and (max-width: 1024px) {
+  .wrap {
+    overflow-x: hidden;
+  }
+  /*header*/
+  .header .inner {
+    position: relative;
+    overflow: hidden;
+  }
+  .header .inner .bar {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 52%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  .header .inner #gnb {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -330px;
+    width: 330px;
+    height: 100vh;
+    padding: 80px 20px 0 0;
+    background: #fff;
+    text-align: right;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: 0.3s;
+  }
+  .header .inner #gnb.active {
+    right: 0;
+  }
+  .header .inner #gnb a {
+    color: #000;
+    display: block;
+    padding: 16px;
+    font-size: 18px;
+  }
+  .header .inner .nav {
+    display: none;
+  }
+}
+/*** mobile ***/
+@media screen and (max-width: 768px) {
+  /*header*/
+  .header .inner {
+    position: relative;
+  }
+  .header .inner .bar {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 22%;
+  }
 }/*# sourceMappingURL=mylife.css.map */

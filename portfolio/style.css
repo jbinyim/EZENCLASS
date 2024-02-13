@@ -386,6 +386,7 @@ li {
   margin-top: 135px;
 }
 .mylife .mylife-content .mylife-img {
+  width: 300px;
   cursor: pointer;
   overflow: hidden;
   position: relative;
@@ -659,6 +660,9 @@ li {
 
 /*** tablet ***/
 @media screen and (max-width: 1024px) {
+  .wrap {
+    overflow-x: hidden;
+  }
   /*index*/
   .index-section h1 {
     font: 130px/1 "oneB";
@@ -748,23 +752,35 @@ li {
     padding: 0 50px;
   }
   .mylife .mylife-content {
-    width: 1024px;
+    width: 100%;
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-  }
-  .mylife .mylife-content .mylife-img span {
-    display: none;
-  }
-  .mylife .mylife-content .mylife-img i {
-    display: none;
-  }
-  .mylife .mylife-content .mylife-img::before {
-    display: none;
+    grid-template-columns: 300px 300px;
+    gap: 100px;
   }
   .mylife .mylife-content .mylife-img:last-child {
+    display: none;
+  }
+  .contact .contact-title h1 {
+    font: 70px/1 "oneB";
+  }
+  .contact .contact-title #contact-box {
+    top: 0px;
+  }
+  .contact .contact-title #contact-box .contact-box-title h1 {
+    font: 60px/1 "oneB";
+  }
+  .contact .contact-title #contact-box .contact-input {
+    width: 600px;
+  }
+  .contact .contact-title #contact-box .contact-input div input {
+    width: 125px;
+  }
+  .contact .contact-title #contact-box .contact-input div .message {
+    width: 300px;
+  }
+  .contact .contact-img {
     display: none;
   }
 }
@@ -790,9 +806,6 @@ li {
     top: 50%;
     left: 22%;
   }
-  .header .inner .nav {
-    display: none;
-  }
   /*article*/
   .project .article-title {
     display: flex;
@@ -817,5 +830,50 @@ li {
     flex-direction: column;
     align-items: center;
     gap: 50px;
+  }
+  .mylife .mylife-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .mylife .mylife-content .mylife-img:last-child {
+    display: block;
+  }
+  .contact .contact-title h1 {
+    font: 30px/1 "oneB";
+  }
+  .contact .contact-title p {
+    font: 14px/1 "oneL";
+  }
+  .contact .contact-title #contact-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact .contact-title #contact-box a {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+  }
+  .contact .contact-title #contact-box a i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .contact .contact-title #contact-box .contact-box-title {
+    position: absolute;
+    top: 35px;
+    height: 250px;
+  }
+  .contact .contact-title #contact-box .contact-box-title h1 {
+    font: 50px/1 "oneB";
+    margin-bottom: 5px;
+  }
+  .contact .contact-title #contact-box .contact-box-title h4 {
+    margin: 5px 0;
+  }
+  .contact .contact-title #contact-box .contact-input div input {
+    width: 150px;
+  }
+  .contact .contact-title #contact-box .contact-input div .message {
+    width: 360px;
   }
 }/*# sourceMappingURL=style.css.map */

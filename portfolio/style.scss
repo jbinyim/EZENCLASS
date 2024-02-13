@@ -115,7 +115,6 @@
     }
   }
 }
-
 /*article*/
 .project {
   width: 1450px;
@@ -223,6 +222,7 @@
     gap: 10px;
     margin-top: 135px;
     .mylife-img {
+      width: 300px;
       cursor: pointer;
       overflow: hidden;
       position: relative;
@@ -429,6 +429,9 @@
 
 /*** tablet ***/
 @media screen and (max-width: 1024px) {
+  .wrap {
+    overflow-x: hidden;
+  }
   /*index*/
   .index-section {
     h1 {
@@ -440,46 +443,7 @@
   }
   /*header*/
   .header {
-    .inner {
-      position: relative;
-      overflow: hidden;
-      .bar {
-        display: block;
-        position: absolute;
-        top: 50%;
-        right: 52%;
-        transform: translateY(-50%);
-        font-size: 20px;
-        cursor: pointer;
-        z-index: 9999;
-      }
-      #gnb {
-        display: block;
-        position: fixed;
-        top: 0;
-        right: -330px;
-        width: 330px;
-        height: 100vh;
-        padding: 80px 20px 0 0;
-        background: #fff;
-        text-align: right;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        z-index: 999;
-        transition: 0.3s;
-        &.active {
-          right: 0;
-        }
-        a {
-          color: #000;
-          display: block;
-          padding: 16px;
-          font-size: 18px;
-        }
-      }
-      .nav {
-        display: none;
-      }
-    }
+    @include tablet-header;
   }
   /*article*/
   .project {
@@ -521,26 +485,44 @@
       padding: 0 50px;
     }
     .mylife-content {
-      width: 1024px;
+      width: 100%;
       display: grid;
       justify-content: center;
       align-items: center;
-      grid-template-columns: 1fr 1fr;
-      gap: 0;
-      .mylife-img {
-        span {
-          display: none;
-        }
-        i {
-          display: none;
-        }
-        &::before {
-          display: none;
-        }
-      }
+      grid-template-columns: 300px 300px;
+      gap: 100px;
       .mylife-img:last-child {
         display: none;
       }
+    }
+  }
+  .contact {
+    .contact-title {
+      h1 {
+        font: 70px/1 "oneB";
+      }
+      #contact-box {
+        top: 0px;
+        .contact-box-title {
+          h1 {
+            font: 60px/1 "oneB";
+          }
+        }
+        .contact-input {
+          width: 600px;
+          div {
+            input {
+              width: 125px;
+            }
+            .message {
+              width: 300px;
+            }
+          }
+        }
+      }
+    }
+    .contact-img {
+      display: none;
     }
   }
 }
@@ -569,9 +551,6 @@
         position: absolute;
         top: 50%;
         left: 22%;
-      }
-      .nav {
-        display: none;
       }
     }
   }
@@ -614,6 +593,59 @@
       flex-direction: column;
       align-items: center;
       gap: 50px;
+    }
+    .mylife-content {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      .mylife-img:last-child {
+        display: block;
+      }
+    }
+  }
+  .contact {
+    .contact-title {
+      h1 {
+        font: 30px/1 "oneB";
+      }
+      p {
+        font: 14px/1 "oneL";
+      }
+      #contact-box {
+        display: flex;
+        flex-direction: column;
+        a {
+          position: absolute;
+          top: 10px;
+          right: 50px;
+          i {
+            font-size: 20px;
+            cursor: pointer;
+          }
+        }
+        .contact-box-title {
+          position: absolute;
+          top: 35px;
+          height: 250px;
+          h1 {
+            font: 50px/1 "oneB";
+            margin-bottom: 5px;
+          }
+          h4 {
+            margin: 5px 0;
+          }
+        }
+        .contact-input {
+          div {
+            input {
+              width: 150px;
+            }
+            .message {
+              width: 360px;
+            }
+          }
+        }
+      }
     }
   }
 }

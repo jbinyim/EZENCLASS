@@ -1,5 +1,12 @@
+const bar = document.querySelector(".bar");
+const gnb = document.querySelector("#gnb");
 const qaTitles = document.querySelectorAll(".title");
 const descs = document.querySelectorAll(".desc");
+
+bar.addEventListener("click", () => {
+  gnb.classList.toggle("active");
+  bar.classList.toggle("active");
+});
 
 qaTitles.forEach((title) => {
   title.addEventListener("click", function () {

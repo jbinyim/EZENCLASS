@@ -12,6 +12,12 @@
 /*header*/
 .header {
   @include header;
+  .bar {
+    display: none;
+  }
+  #gnb {
+    display: none;
+  }
 }
 
 /* search */
@@ -101,4 +107,30 @@
 /*footer*/
 .footer {
   @include foot;
+}
+/*** tablet ***/
+@media screen and (max-width: 1024px) {
+  .wrap {
+    overflow-x: hidden;
+  }
+  /*header*/
+  .header {
+    @include tablet-header;
+  }
+}
+
+/*** mobile ***/
+@media screen and (max-width: 768px) {
+  /*header*/
+  .header {
+    .inner {
+      position: relative;
+      .bar {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 22%;
+      }
+    }
+  }
 }
