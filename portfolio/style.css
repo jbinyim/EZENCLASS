@@ -126,47 +126,149 @@ li {
 
 /*figure*/
 .home-figure {
-  width: 100%;
-  height: 919px;
   margin-top: 80px;
-  background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("./img/02main/main1.jpg") center/cover no-repeat;
 }
-.home-figure .home-text {
-  width: 1450px;
+.home-figure .figuer {
+  width: 100%;
+  height: 839px;
+  position: relative;
+  overflow: hidden;
+}
+.home-figure .figuer .figure-inner {
   height: 100%;
-  margin: 0 auto;
-  padding: 520px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  overflow: hidden;
+}
+.home-figure .figuer .figure-inner input[name=tabmenu] {
+  display: none;
+}
+.home-figure .figuer .figure-inner .tabs {
+  width: 300%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.home-figure .figuer .figure-inner .tabs .tab {
+  width: 33.33%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
   color: #fff;
 }
-.home-figure .home-text h1 {
+.home-figure .figuer .figure-inner .tabs .tab div {
+  float: left;
+  height: 100%;
+}
+.home-figure .figuer .figure-inner .tabs .figuer01 {
+  background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("./img/02main/main1.jpg") center/cover no-repeat;
+}
+.home-figure .figuer .figure-inner .tabs .figuer01 .figure-text {
+  position: relative;
+  top: 50%;
+  left: 15%;
+}
+.home-figure .figuer .figure-inner .tabs .figuer01 .figure-text h1 {
   position: relative;
   font: 80px/1 "oneB";
 }
-.home-figure .home-text h1::before {
+.home-figure .figuer .figure-inner .tabs .figuer01 .figure-text h1::before {
   content: "";
   position: absolute;
-  top: -5px;
+  top: -10px;
   left: 0;
-  width: 400px;
+  width: 200px;
   height: 3px;
   background: #fff;
 }
-.home-figure .home-text h2 {
+.home-figure .figuer .figure-inner .tabs .figuer01 .figure-text h4 {
+  position: absolute;
   font: 32px/1 "oneB";
   margin: 50px 0 60px;
 }
-.home-figure .home-text a {
+.home-figure .figuer .figure-inner .tabs .figuer02 {
+  background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("./img/02main/main2.jpg") center/cover no-repeat;
+}
+.home-figure .figuer .figure-inner .tabs .figuer02 .figure-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home-figure .figuer .figure-inner .tabs .figuer02 .figure-text h1 {
+  font: 50px/1 "oneB";
+  color: #ddd;
+  margin-bottom: 200px;
+}
+.home-figure .figuer .figure-inner .tabs .figuer02 .figure-text h4 {
+  font: 20px/1 "oneB";
+}
+.home-figure .figuer .figure-inner .tabs .figuer03 {
+  background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("./img/02main/main3.jpg") center/cover no-repeat;
+}
+.home-figure .figuer .figure-inner .tabs .figuer03 .figure-text {
+  text-align: center;
+  position: relative;
+  top: 55%;
+  left: 50%;
+}
+.home-figure .figuer .figure-inner .tabs .figuer03 .figure-text h1 {
+  font: 40px/3rem "oneB";
+  color: #ddd;
+  margin-bottom: 100px;
+}
+.home-figure .figuer .figure-inner .tabs .figuer03 .figure-text h4 {
+  font: 20px/1 "oneB";
+}
+.home-figure .figuer .figure-inner .btn {
+  width: 25%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.home-figure .figuer .figure-inner .btn label {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: #fff;
+  margin: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.home-figure .figuer .figure-inner .btn label::before {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
   transition: all 0.3s;
 }
-.home-figure .home-text a:hover {
-  color: #fdee1a;
+.home-figure .figuer .figure-inner .btn label:hover::before {
+  border: 1px solid #fdee1a;
 }
-.home-figure .home-text a i {
-  font-size: 50px;
-  margin-right: 20px;
+.home-figure .figuer .figure-inner input[id=tab1]:checked ~ .btn label[for=tab1]::before {
+  border: 1px solid #fdee1a;
+}
+.home-figure .figuer .figure-inner input[id=tab2]:checked ~ .btn label[for=tab2]::before {
+  border: 1px solid #fdee1a;
+}
+.home-figure .figuer .figure-inner input[id=tab3]:checked ~ .btn label[for=tab3]::before {
+  border: 1px solid #fdee1a;
+}
+.home-figure .figuer .figure-inner input[id=tab1]:checked ~ .tabs {
+  margin-left: 0;
+}
+.home-figure .figuer .figure-inner input[id=tab2]:checked ~ .tabs {
+  margin-left: -100%;
+}
+.home-figure .figuer .figure-inner input[id=tab3]:checked ~ .tabs {
+  margin-left: -200%;
 }
 
 /*article*/
@@ -712,6 +814,22 @@ li {
     display: none;
   }
   /*article*/
+  .home-figure .figuer .figure-inner .tabs .figuer01 .figure-text {
+    left: 10%;
+  }
+  .home-figure .figuer .figure-inner .tabs .figuer01 .figure-text h1 {
+    font-size: 60px;
+  }
+  .home-figure .figuer .figure-inner .tabs .figuer02 .figure-text h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  .home-figure .figuer .figure-inner .tabs .figuer03 .figure-text h1 {
+    font-size: 30px;
+  }
+  .home-figure .figuer .figure-inner .btn label {
+    margin: 20px;
+  }
   .project {
     width: 100%;
     padding: 0 50px;
@@ -807,6 +925,41 @@ li {
     left: 22%;
   }
   /*article*/
+  .home-figure .figuer {
+    height: 650px;
+  }
+  .home-figure .figuer .figure-inner .tabs .figuer01 .figure-text {
+    top: 20%;
+  }
+  .home-figure .figuer .figure-inner .tabs .figuer01 .figure-text h1 {
+    font-size: 40px;
+  }
+  .home-figure .figuer .figure-inner .tabs .figuer01 .figure-text h4 {
+    font-size: 20px;
+  }
+  .home-figure .figuer .figure-inner .tabs .figuer02 .figure-text h1 {
+    font-size: 20px;
+  }
+  .home-figure .figuer .figure-inner .tabs .figuer02 .figure-text h4 {
+    font-size: 15px;
+  }
+  .home-figure .figuer .figure-inner .tabs .figuer03 .figure-text {
+    left: 40%;
+  }
+  .home-figure .figuer .figure-inner .tabs .figuer03 .figure-text h1 {
+    font: 20px/1 "oneB";
+  }
+  .home-figure .figuer .figure-inner .btn label {
+    width: 5px;
+    height: 5px;
+    margin: 10px;
+  }
+  .home-figure .figuer .figure-inner .btn label::before {
+    width: 20px;
+    height: 20px;
+    top: -8px;
+    left: -8px;
+  }
   .project .article-title {
     display: flex;
     flex-direction: column;

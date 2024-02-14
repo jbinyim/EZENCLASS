@@ -124,6 +124,7 @@ li {
   font: 32px/1 "oneB";
   padding-right: 100px;
   border-right: 1px solid #000;
+  transition: all 0.3s;
 }
 .life-title ul li:last-child {
   border: none;
@@ -271,6 +272,26 @@ li {
   .header .inner .nav {
     display: none;
   }
+  .life-title ul {
+    gap: 70px;
+    margin-left: 40px;
+  }
+  .life-title ul li {
+    padding-right: 50px;
+  }
+  .life-image .content {
+    gap: 50px;
+  }
+  .life-image .content div {
+    gap: 20px;
+  }
+  .life-image .content div span img {
+    width: 215px;
+    height: 200px;
+  }
+  .life-image .content div span p a {
+    font-size: 16px;
+  }
 }
 /*** mobile ***/
 @media screen and (max-width: 768px) {
@@ -283,5 +304,43 @@ li {
     position: absolute;
     top: 50%;
     left: 22%;
+  }
+  .life-search form input {
+    width: 350px;
+  }
+  .life-title {
+    margin-bottom: 100px;
+  }
+  .life-title ul {
+    gap: 5px;
+    margin-left: 1%;
+  }
+  .life-title ul li {
+    font-size: 18px;
+    margin-right: 20px;
+    padding-right: 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 0 0 2px;
+  }
+  .life-title ul li.active {
+    font: 25px/1 "oneB";
+    border: 1px solid #000;
+  }
+  .life-title ul li:last-child {
+    border: 1px solid #ddd;
+  }
+  .life-image .content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .life-image .content div span img {
+    width: 315px;
+    height: 300px;
+  }
+  .life-image .content div span p a {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=mylife.css.map */

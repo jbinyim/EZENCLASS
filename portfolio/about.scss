@@ -192,6 +192,7 @@
   .my {
     display: flex;
     flex-direction: column;
+    margin-bottom: 400px;
     .my-info {
       width: 100%;
       .my-info-box {
@@ -213,6 +214,28 @@
     }
     .my-image {
       width: 100%;
+      height: 100%;
+      img {
+        margin: 30px auto;
+      }
+    }
+  }
+  .qa {
+    width: 100%;
+    height: 100%;
+    h1 {
+      font-size: 60px;
+    }
+    .qa-box {
+      width: 300px;
+      .title {
+        font-size: 20px;
+        margin-bottom: 50px;
+        &::after {
+          float: none;
+          margin-left: 5px;
+        }
+      }
     }
   }
 }

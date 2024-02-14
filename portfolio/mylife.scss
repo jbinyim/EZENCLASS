@@ -63,6 +63,7 @@
       font: 32px/1 "oneB";
       padding-right: 100px;
       border-right: 1px solid #000;
+      transition: all 0.3s;
       &:last-child {
         border: none;
       }
@@ -117,6 +118,34 @@
   .header {
     @include tablet-header;
   }
+  .life-title {
+    ul {
+      gap: 70px;
+      margin-left: 40px;
+      li {
+        padding-right: 50px;
+      }
+    }
+  }
+  .life-image {
+    .content {
+      gap: 50px;
+      div {
+        gap: 20px;
+        span {
+          img {
+            width: 215px;
+            height: 200px;
+          }
+          p {
+            a {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /*** mobile ***/
@@ -130,6 +159,56 @@
         position: absolute;
         top: 50%;
         left: 22%;
+      }
+    }
+  }
+  .life-search {
+    form {
+      input {
+        width: 350px;
+      }
+    }
+  }
+  .life-title {
+    margin-bottom: 100px;
+    ul {
+      gap: 5px;
+      margin-left: 1%;
+      li {
+        font-size: 18px;
+        margin-right: 20px;
+        padding-right: 0;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 30px;
+        box-shadow: 0 0 2px;
+        &.active {
+          font: 25px/1 "oneB";
+          border: 1px solid #000;
+        }
+        &:last-child {
+          border: 1px solid #ddd;
+        }
+      }
+    }
+  }
+  .life-image {
+    .content {
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span {
+          img {
+            width: 315px;
+            height: 300px;
+          }
+          p {
+            a {
+              font-size: 18px;
+            }
+          }
+        }
       }
     }
   }

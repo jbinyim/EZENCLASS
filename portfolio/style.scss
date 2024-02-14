@@ -72,45 +72,149 @@
 
 /*figure*/
 .home-figure {
-  width: 100%;
-  height: 919px;
   margin-top: 80px;
-  background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
-    url("./img/02main/main1.jpg") center/cover no-repeat;
-  .home-text {
-    width: 1450px;
-    height: 100%;
-    margin: 0 auto;
-    padding: 520px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    h1 {
-      position: relative;
-      font: 80px/1 "oneB";
-      &::before {
-        content: "";
+  .figuer {
+    width: 100%;
+    height: 839px;
+    position: relative;
+    overflow: hidden;
+    .figure-inner {
+      height: 100%;
+      overflow: hidden;
+      input[name="tabmenu"] {
+        display: none;
+      }
+      .tabs {
+        width: 300%;
+        height: 100%;
+        overflow: hidden;
+        transition: all 0.5s;
+        .tab {
+          width: 33.33%;
+          height: 100%;
+          float: left;
+          overflow: hidden;
+          color: #fff;
+          div {
+            float: left;
+            height: 100%;
+          }
+        }
+        .figuer01 {
+          background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+            url("./img/02main/main1.jpg") center/cover no-repeat;
+          .figure-text {
+            position: relative;
+            top: 50%;
+            left: 15%;
+            h1 {
+              position: relative;
+              font: 80px/1 "oneB";
+              &::before {
+                content: "";
+                position: absolute;
+                top: -10px;
+                left: 0;
+                width: 200px;
+                height: 3px;
+                background: #fff;
+              }
+            }
+            h4 {
+              position: absolute;
+              font: 32px/1 "oneB";
+              margin: 50px 0 60px;
+            }
+          }
+        }
+        .figuer02 {
+          background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+            url("./img/02main/main2.jpg") center/cover no-repeat;
+          .figure-text {
+            text-align: center;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            h1 {
+              font: 50px/1 "oneB";
+              color: #ddd;
+              margin-bottom: 200px;
+            }
+            h4 {
+              font: 20px/1 "oneB";
+            }
+          }
+        }
+        .figuer03 {
+          background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+            url("./img/02main/main3.jpg") center/cover no-repeat;
+          .figure-text {
+            text-align: center;
+            position: relative;
+            top: 55%;
+            left: 50%;
+            h1 {
+              font: 40px/3rem "oneB";
+              color: #ddd;
+              margin-bottom: 100px;
+            }
+            h4 {
+              font: 20px/1 "oneB";
+            }
+          }
+        }
+      }
+      .btn {
+        width: 25%;
         position: absolute;
-        top: -5px;
-        left: 0;
-        width: 400px;
-        height: 3px;
-        background: #fff;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        label {
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          border-radius: 100%;
+          background: #fff;
+          margin: 30px;
+          cursor: pointer;
+          position: relative;
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 27px;
+            height: 27px;
+            border: 1px solid #000;
+            border-radius: 100%;
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            transition: all 0.3s;
+          }
+          &:hover::before {
+            border: 1px solid #fdee1a;
+          }
+        }
       }
-    }
-    h2 {
-      font: 32px/1 "oneB";
-      margin: 50px 0 60px;
-    }
-    a {
-      transition: all 0.3s;
-      &:hover {
-        color: map-get($main-color, click);
+      input[id="tab1"]:checked ~ .btn label[for="tab1"]::before {
+        border: 1px solid #fdee1a;
       }
-      i {
-        font-size: 50px;
-        margin-right: 20px;
+      input[id="tab2"]:checked ~ .btn label[for="tab2"]::before {
+        border: 1px solid #fdee1a;
+      }
+      input[id="tab3"]:checked ~ .btn label[for="tab3"]::before {
+        border: 1px solid #fdee1a;
+      }
+      input[id="tab1"]:checked ~ .tabs {
+        margin-left: 0;
+      }
+      input[id="tab2"]:checked ~ .tabs {
+        margin-left: -100%;
+      }
+      input[id="tab3"]:checked ~ .tabs {
+        margin-left: -200%;
       }
     }
   }
@@ -446,6 +550,42 @@
     @include tablet-header;
   }
   /*article*/
+  .home-figure {
+    .figuer {
+      .figure-inner {
+        .tabs {
+          .figuer01 {
+            .figure-text {
+              left: 10%;
+              h1 {
+                font-size: 60px;
+              }
+            }
+          }
+          .figuer02 {
+            .figure-text {
+              h1 {
+                font-size: 40px;
+                margin-bottom: 50px;
+              }
+            }
+          }
+          .figuer03 {
+            .figure-text {
+              h1 {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+        .btn {
+          label {
+            margin: 20px;
+          }
+        }
+      }
+    }
+  }
   .project {
     width: 100%;
     padding: 0 50px;
@@ -555,6 +695,57 @@
     }
   }
   /*article*/
+  .home-figure {
+    .figuer {
+      height: 650px;
+      .figure-inner {
+        .tabs {
+          .figuer01 {
+            .figure-text {
+              top: 20%;
+              h1 {
+                font-size: 40px;
+              }
+              h4 {
+                font-size: 20px;
+              }
+            }
+          }
+          .figuer02 {
+            .figure-text {
+              h1 {
+                font-size: 20px;
+              }
+              h4 {
+                font-size: 15px;
+              }
+            }
+          }
+          .figuer03 {
+            .figure-text {
+              left: 40%;
+              h1 {
+                font: 20px/1 "oneB";
+              }
+            }
+          }
+        }
+        .btn {
+          label {
+            width: 5px;
+            height: 5px;
+            margin: 10px;
+            &::before {
+              width: 20px;
+              height: 20px;
+              top: -8px;
+              left: -8px;
+            }
+          }
+        }
+      }
+    }
+  }
   .project {
     .article-title {
       display: flex;

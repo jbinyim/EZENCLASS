@@ -335,6 +335,7 @@ li {
   .my {
     display: flex;
     flex-direction: column;
+    margin-bottom: 400px;
   }
   .my .my-info {
     width: 100%;
@@ -357,5 +358,27 @@ li {
   }
   .my .my-image {
     width: 100%;
+    height: 100%;
+  }
+  .my .my-image img {
+    margin: 30px auto;
+  }
+  .qa {
+    width: 100%;
+    height: 100%;
+  }
+  .qa h1 {
+    font-size: 60px;
+  }
+  .qa .qa-box {
+    width: 300px;
+  }
+  .qa .qa-box .title {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .qa .qa-box .title::after {
+    float: none;
+    margin-left: 5px;
   }
 }/*# sourceMappingURL=about.css.map */
