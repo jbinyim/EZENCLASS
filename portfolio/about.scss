@@ -143,6 +143,36 @@
   .header {
     @include tablet-header;
   }
+  .my {
+    .my-info {
+      .my-info-box {
+        h1 {
+          font: 50px/1 "oneB";
+          margin-bottom: 200px;
+        }
+        li {
+          width: 300px;
+          i {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+    .my-image {
+      img {
+        width: 300px;
+        height: 460px;
+        margin-left: 20px;
+      }
+    }
+  }
+  .qa {
+    width: 100%;
+    padding: 20px;
+    .qa-box {
+      width: 650px;
+    }
+  }
 }
 
 /*** mobile ***/
@@ -157,6 +187,32 @@
         top: 50%;
         left: 22%;
       }
+    }
+  }
+  .my {
+    display: flex;
+    flex-direction: column;
+    .my-info {
+      width: 100%;
+      .my-info-box {
+        text-align: center;
+        margin: 0 auto;
+        width: 300px;
+        h1 {
+          margin-bottom: 150px;
+        }
+        li {
+          width: 250px;
+          margin: 0 auto 20px;
+          text-align: left;
+          &:last-child {
+            margin-bottom: 100px;
+          }
+        }
+      }
+    }
+    .my-image {
+      width: 100%;
     }
   }
 }

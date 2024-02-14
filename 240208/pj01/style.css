@@ -46,6 +46,40 @@ body {
   overflow: hidden;
 }
 
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.gnb-inner {
+  width: calc(100% - 40px);
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.logo {
+  float: left;
+}
+.logo img {
+  padding-top: 17px;
+}
+.gnb {
+  float: right;
+}
+.menu {
+  display: none;
+}
+.slogan {
+  font-size: 18px;
+  font-style: italic;
+}
+.trigger {
+  display: none;
+}
+
 /* home */
 .home-inner {
   background: #fff;

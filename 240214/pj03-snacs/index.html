@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custom -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="contents">
+      <img
+        src="https://thumbs.dreamstime.com/b/sale-red-sign-sticker-isolated-white-background-40467403.jpg"
+        alt="sale"
+      />
+      <form action="http://localhos:3000/result" method="post">
+        <ul>
+          <li>
+            <lavel for="price">소비자가</lavel>
+            <input type="text" name="price" id="price" />원
+          </li>
+          <li>
+            <lavel for="rate">할인률</lavel>
+            <input type="text" name="rate" id="rate" />%
+          </li>
+          <li><input type="submit" id="button" value="할인가격 계산하기" /></li>
+        </ul>
+      </form>
+      <div id="showResult">할인된 가격 출력</div>
+    </div>
+  </body>
+</html>

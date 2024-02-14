@@ -46,3 +46,28 @@ $(".project-photo").slick({
   autoplay: true,
   cssEase: "linear",
 });
+
+// header > trigger
+$(".trigger").click(function () {
+  $(this).toggleClass("active");
+  $(".gnb").toggleClass("active");
+});
+
+$(".menu a").click(function () {
+  $(".gnb").removeClass("active");
+  $(".trigger").removeClass("active");
+});
+
+// scroll to
+$(".menu a").click(function () {
+  $.scrollTo(this.hash || 0, 900);
+});
+
+// header scroll event
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 50) {
+    $("header").addClass("active");
+  } else {
+    $("header").removeClass("avtive");
+  }
+});
