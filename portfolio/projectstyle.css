@@ -331,7 +331,7 @@ li {
 }
 .detail .detail-content .description-detail {
   width: 980px;
-  height: 300px;
+  height: auto;
   border: 1px solid #000;
   border-radius: 20px;
   margin-bottom: 200px;
