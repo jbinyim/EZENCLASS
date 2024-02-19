@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#galleryZone {
+  text-align: center;
+}
+#galleryZone p:first-child {
+  width: 100%;
+  height: 800px;
+}
