@@ -144,8 +144,18 @@ query: 질의하다, 질문하다
 - 시간관련 내장함수 (* setInterval / clearInterval / setTimeout)
 - 재귀함수
 
+----------------------------------------------------------------------------------------------------------------------------
 
+*0220*
 
+7. DOM
 
+html 문서안에 태그 및 이미지, 텍스트 요소를 입력하는 순간 웹 브라우저에서는 DOM Tree가 생성됨
 
-
+- querySelector / getElement 
+- innerText / innerHtml / textContent
+- onclick 이벤트 핸들러
+- classList
+- add() <-> remove() = toggle()
+- contains()
+- form

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <form action="https://localhost:3000/order.html" method="post">
+        <fieldset>
+          <legend>상품 정보</legend>
+          <ul>
+            <li>
+              <label for="product" class="field">상품 :</label>
+              <input
+                type="text"
+                name="product"
+                id="product"
+                class="input-box"
+              />
+            </li>
+            <li>
+              <label for="product-num" class="field">갯수 :</label>
+              <input
+                type="number"
+                name="product-num"
+                id="product-num"
+                class="input-box"
+                value="1"
+                min="1"
+              />
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>주문 정보</legend>
+          <ul>
+            <li>
+              <label for="order-name" class="field">이름 :</label>
+              <input type="text" id="order-name" class="input-box" />
+            </li>
+            <li>
+              <label for="order-tel" class="field">연락처 :</label>
+              <input type="text" id="order-tel" class="input-box" />
+            </li>
+            <li>
+              <label for="order-address" class="field">주소</label>
+              <input type="text" id="order-address" class="input-box" />
+            </li>
+          </ul>
+        </fieldset>
+        <input type="submit" class="order" value="주문하기" />
+      </form>
+    </div>
+  </body>
+</html>
