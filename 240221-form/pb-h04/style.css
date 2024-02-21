@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+button {
+  width: 100px;
+  height: 50px;
+  background: royalblue;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background: #fff;
+  border: 1px solid royalblue;
+  color: royalblue;
+}
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: auto;
+  gap: 30px;
+  display: none;
+  border-radius: 15px;
+  box-shadow: 0 0 3px;
+}
