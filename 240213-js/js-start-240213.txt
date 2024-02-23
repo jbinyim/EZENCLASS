@@ -263,5 +263,26 @@ key				키보드 이벤트(keydown)가 발생했을 떼 어떤 키를 입력했�
 preventDefault			기본적으로 탑재되어있는 기능을 무력화 하거나 취소시키고자 할 떄 사용
 
 
+9. DOM 심화
+
+- createElemnet()
+- createTextNode()
+- appendChild()
+- createAttribute()
+- setAttributeNode()
+- remove()
+- parentNode
+- removeChild()
+
+10. 객체
+
+
+
+
+
+
+
+
+
 
 

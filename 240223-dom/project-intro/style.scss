@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  .brand {
+    background: url("./img/브랜드\ 배경.jpg") center/cover no-repeat;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .center-logo {
+  }
+  .franchise {
+    width: 50%;
+    height: 100%;
+    background: url("./img/프랜차이즈\ 배경.jpg") center/cover no-repeat;
+    position: relative;
+    .text {
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      transition: all 0.4s;
+      h1 {
+        font-size: 4.5rem;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 80px;
+          height: 1px;
+          background: #fff;
+        }
+      }
+      p {
+        font-size: 1.5rem;
+        color: #7c00a0;
+        transition: all 0.3s;
+      }
+      h3 {
+        font-size: 1.875rem;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      transition: all 0.4s;
+    }
+    &:hover::before {
+      display: none;
+    }
+    &:hover {
+      .text {
+        transform: translate(-50%, -100%);
+      }
+      p {
+        color: #fff;
+      }
+    }
+  }
+}
