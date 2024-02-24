@@ -11,17 +11,7 @@
     background: url("./img/브랜드\ 배경.jpg") center/cover no-repeat;
     width: 50%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .center-logo {
-  }
-  .franchise {
-    width: 50%;
-    height: 100%;
-    background: url("./img/프랜차이즈\ 배경.jpg") center/cover no-repeat;
+    cursor: pointer;
     position: relative;
     .text {
       color: #fff;
@@ -31,27 +21,35 @@
       transform: translate(-50%, -50%);
       text-align: center;
       transition: all 0.4s;
-      h1 {
-        font-size: 4.5rem;
-        position: relative;
-        &::after {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 80px;
-          height: 1px;
-          background: #fff;
+      .text-bx {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+          font-size: 4.5rem;
+          position: relative;
+          margin-bottom: 70px;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 1px;
+            background: #fff;
+          }
         }
-      }
-      p {
-        font-size: 1.5rem;
-        color: #7c00a0;
-        transition: all 0.3s;
-      }
-      h3 {
-        font-size: 1.875rem;
+        p {
+          font-size: 1.5rem;
+          color: #dc3917;
+          margin-bottom: 20px;
+          transition: all 0.3s;
+        }
+        h3 {
+          font-size: 1.875rem;
+        }
       }
     }
     &::before {
@@ -70,6 +68,80 @@
     &:hover {
       .text {
         transform: translate(-50%, -100%);
+        p {
+          color: #fff;
+        }
+      }
+      p {
+        color: #fff;
+      }
+    }
+  }
+
+  .franchise {
+    width: 50%;
+    height: 100%;
+    background: url("./img/프랜차이즈\ 배경.jpg") center/cover no-repeat;
+    cursor: pointer;
+    position: relative;
+    .text {
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      transition: all 0.4s;
+      .text-bx {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+          font-size: 4.5rem;
+          position: relative;
+          margin-bottom: 70px;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 1px;
+            background: #fff;
+          }
+        }
+        p {
+          font-size: 1.5rem;
+          color: #7c00a0;
+          margin-bottom: 20px;
+          transition: all 0.3s;
+        }
+        h3 {
+          font-size: 1.875rem;
+        }
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      transition: all 0.4s;
+    }
+    &:hover::before {
+      display: none;
+    }
+    &:hover {
+      .text {
+        transform: translate(-50%, -100%);
+        p {
+          color: #fff;
+        }
       }
       p {
         color: #fff;

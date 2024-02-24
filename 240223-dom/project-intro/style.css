@@ -14,15 +14,75 @@
   background: url("./img/브랜드 배경.jpg") center/cover no-repeat;
   width: 50%;
   height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+.wrap .brand .text {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: all 0.4s;
+}
+.wrap .brand .text .text-bx {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.wrap .brand .text .text-bx h1 {
+  font-size: 4.5rem;
+  position: relative;
+  margin-bottom: 70px;
+}
+.wrap .brand .text .text-bx h1::after {
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 1px;
+  background: #fff;
+}
+.wrap .brand .text .text-bx p {
+  font-size: 1.5rem;
+  color: #dc3917;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+.wrap .brand .text .text-bx h3 {
+  font-size: 1.875rem;
+}
+.wrap .brand::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  transition: all 0.4s;
+}
+.wrap .brand:hover::before {
+  display: none;
+}
+.wrap .brand:hover .text {
+  transform: translate(-50%, -100%);
+}
+.wrap .brand:hover .text p {
+  color: #fff;
+}
+.wrap .brand:hover p {
+  color: #fff;
+}
 .wrap .franchise {
   width: 50%;
   height: 100%;
   background: url("./img/프랜차이즈 배경.jpg") center/cover no-repeat;
+  cursor: pointer;
   position: relative;
 }
 .wrap .franchise .text {
@@ -34,26 +94,34 @@
   text-align: center;
   transition: all 0.4s;
 }
-.wrap .franchise .text h1 {
+.wrap .franchise .text .text-bx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .franchise .text .text-bx h1 {
   font-size: 4.5rem;
   position: relative;
+  margin-bottom: 70px;
 }
-.wrap .franchise .text h1::after {
+.wrap .franchise .text .text-bx h1::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -35px;
   left: 50%;
   transform: translateX(-50%);
   width: 80px;
   height: 1px;
   background: #fff;
 }
-.wrap .franchise .text p {
+.wrap .franchise .text .text-bx p {
   font-size: 1.5rem;
   color: #7c00a0;
+  margin-bottom: 20px;
   transition: all 0.3s;
 }
-.wrap .franchise .text h3 {
+.wrap .franchise .text .text-bx h3 {
   font-size: 1.875rem;
 }
 .wrap .franchise::before {
@@ -71,6 +139,9 @@
 }
 .wrap .franchise:hover .text {
   transform: translate(-50%, -100%);
+}
+.wrap .franchise:hover .text p {
+  color: #fff;
 }
 .wrap .franchise:hover p {
   color: #fff;
