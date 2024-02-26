@@ -1,0 +1,12 @@
+- 혼자서 > github / commit
+
+1. 회사 취업시, github
+2. 브랜치 : 레파지스토리 : master
+3. 사수 및 부사수!!
+=> 대표 및 직원간 1:1 
+=> 커밋 & 병합
+4. 4인 1조
+
+
+6. 그룹프로젝트
+> master / develop / feature

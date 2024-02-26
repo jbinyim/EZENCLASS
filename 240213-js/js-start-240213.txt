@@ -275,12 +275,55 @@ preventDefault			기본적으로 탑재되어있는 기능을 무력화 하거�
 - removeChild()
 
 10. 객체
+- window: 웹 브라우저 안에 있는 최상위 "객체"
+> 내장객체: window 안에 기본적으로 탐재되어있는 객체
+- Date() (날짜객체)
+- 밀리초
+- Math (수학객체)
 
+*window 자주사용하는 프로퍼티
 
+document			웹 브라우저에 출력될 문서 => html > body
+innerhight			
+screenX
+screenY
+scrollX				스크롤시 수평으로 이동한 만큼의 X좌표
+scrollY
+localStorge
+sessionStorage
+location				winodw객체의 현 위치를 URL로 표기
 
+*window 자주사용하는 메서드(*함수)
 
+alert()				웹 브라우저 알림창을 표시할 때
+prompt()				사용자로부터 입력된 텍스트를 사용하고자 할 때
+focus()				특정 윈도우창에 마우스 커서가 위치했을 때
+open()				새로운 창을 열고자 할 떄
+close()				현재 열려있는 창을 닫고자 할 때
+confirm()				확인 및 취소 버튼이 있는 확인 창을 표시
+print()				현재 웹 브라우저 문서를 출력하고자 할 때
+scroll()				문서에서 특정 위치로 스크롤 하고자 할 때
+scrollTo()				문서에서 지정한 위치까지 한번에 스크롤
+stop()				웹 문서 로딩을 멈추게 하고 싶을 때
 
+*Date() 프로토타입을 통해서 생성되는 인스턴스 객체가 사용할 수 있는 메서드
+getFullYear()			연도 값을 가져올 때
+getMonth()			월 값을 가져올 때 (0~11 숫자 / 0 === 1월)
+getDate()				일 값을 가져올 때 (1~31 까지)
+getDay()				요일 값을 가져올 떄 (0~6 까지 / 0 === 일요일)
+getTime()				시간 값을 가져올 때 (1970년 1월 1일부터 현시점까지의 시간 / 밀리초)
+getHours()			시 값 가져올 때
+getMinutes()			분 값 가져올 때
+getSeconds()			초 값 가져올 때
 
+setFullYear()			연도 값을 설정할 때
+setMonth()			월 값을 설정할 때 (0~11 숫자 / 0 === 1월)
+setDate()				일 값을 설정할 때 (1~31 까지)
+setDay()				요일 값을 설정할 떄 (0~6 까지 / 0 === 일요일)
+setTime()				시간 값을 설정할 때 (1970년 1월 1일부터 현시점까지의 시간 / 밀리초)
+setHours()			시 값 설정
+setMinutes()			분 값 설정
+setSeconds()			초 값 설정
 
 
 
