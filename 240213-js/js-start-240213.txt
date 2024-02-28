@@ -331,6 +331,6 @@ setMinutes()			분 값 설정
 setSeconds()			초 값 설정
 
 
-
+10. 객체심화
 
 
