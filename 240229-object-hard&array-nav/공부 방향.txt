@@ -1,0 +1,11 @@
+1) 프론트엔드
+>html, css, scss, style-components
+>Ts, react.js + @ next.js
+>figma + git
+>node.js
+
+2) 퍼블리셔
+>html, css ,scss
+>js + jquery
+>figma + git
+> react.js
