@@ -46,19 +46,14 @@ const handler = (e) => {
 
 const init = () => {
   const userTodos = JSON.parse(localStorage.getItem("todos"));
+
   if (userTodos) {
     userTodos.forEach((todo) => {
       addItem(todo);
     });
-  } else {
-    handler();
+    todos = userTodos;
   }
-  todos = userTodos;
 };
 
 init();
 form.addEventListener("submit", handler);
-
-// localStorage.setItem("Hello", "world");
-// const myData = localStorage.getItem("Hello");
-// console.log(myData);
