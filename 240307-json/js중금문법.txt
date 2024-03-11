@@ -8,3 +8,9 @@
 - AJAX 통신 기법을 활용한 통신방법
 > XMLHttpRequest
 > fetch()
+- open() / send()
+- 예외조항처리
+> try / catch / fianlly
+
+
+2. 비동기 VS 동기
