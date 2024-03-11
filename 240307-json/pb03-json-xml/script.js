@@ -7,7 +7,7 @@ const renderHTML = (students) => {
   let output = "";
   students.forEach((student) => {
     output += `
-    <h2>${student.name}</h2>
+    <h2 class="h2">${student.name}</h2>
     <ul>
       <li>전공 : ${student.major}</li>
       <li>학년 : ${student.grade}</li>
