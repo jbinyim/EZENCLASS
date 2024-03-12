@@ -1,3 +1,6 @@
+
+jsonplaceholder.typicode.com
+--------------------------------------------------------------------------------------------
 1. 서버와 통신
 - Server
 - http & https: 통신규약
@@ -25,3 +28,13 @@
 - reject() 실행 => 매개변수값을 catch() 메서드 함수 사용
 - finally문 => 선택적으로 사용할 수 있는 문 => resolve 혹은 reject 함수 실행여부와 관계없이 가장 마지막 종료시점에서 실행되는 문
 - Promise(), 함수의 반환값에 실행가능 => then 매서드 함수를 통해서 결과 값을 가져올 수 있었음
+
+4. fetch API
+- fetch(가져오고자 하는 data url)
+- fetch()호출 => Promise 객체 생성 => then() || catch() 사용가능
+- fetch() 함수를 활용해서 json 데이터를 가져온 경우, 객체화하기 위해서 사용한 메서드 함수
+=> json() = XMLHttpRequest(), JSON.parse() : json => object
+- 비동기처리 방식 중에 마지막 학습내용 => async & await
+- async & await: 각각 비동기처리를 진행하는 요소를 가운데 순서를 정희하기 위한 목적 사용
+- async: 예약어 사용하면 자동으로 Promise 객체 생성 => then() || catch() 사용가능
+
