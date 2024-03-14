@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./game.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper_header">
+        <div class="contents_title">
+          <div class="title">Game</div>
+          <div class="subTitle">Today Choice</div>
+        </div>
+        <div class="divideLine"></div>
+      </div>
+      <div class="game_container">
+        <img src="./img/word.png" alt="train" />
+        <div class="game_title">끝말잇기</div>
+        <div class="game_subtitle">제시어 : <span id="word">산기슭</span></div>
+        <div class="word_text">
+          <form name="wordgame" action="https://localhost:3000/" method="post">
+            <input
+              id="myword"
+              class="textbox"
+              type="text"
+              placeholder="단어를 입력하세요"
+            />
+            <input class="search" type="submit" value="입력" />
+          </form>
+          <div id="result" class="word_result">결과</div>
+        </div>
+      </div>
+      <div class="game_container">
+        <img src="./img/lotto.png" alt="loto" />
+        <div class="game_title">LOTO</div>
+        <div class="game_subtitle">버튼을 누르세요</div>
+        <div class="game_loto_number">
+          <span>6,</span>
+          <span>3,</span>
+          <span>1,</span>
+          <span>2,</span>
+          <span>30,</span>
+          <span>40</span>
+        </div>
+        <button class="wrapper_loto_btn">push</button>
+      </div>
+    </div>
+  </body>
+</html>
