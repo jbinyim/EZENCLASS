@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrapper_header {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contents_title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.title {
+  color: #55b2d4;
+  font: bold 13px/1 "arial";
+}
+.subTitle {
+  font-size: 14px;
+  padding-bottom: 2px;
+}
+.divideLine {
+  width: 100%;
+  border-top: 1px solid gray;
+  margin: 4px 0;
+}
+.ablem_wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ablem_wrapper_item .ablem_thumnail {
+  width: 110px;
+  height: 110px;
+}
+.ablem_wrapper_item .ablem_songtitle {
+  font-size: 12px;
+  color: gray;
+}
+.ablem_wrapper_item .ablem_artist {
+  color: #0f465e;
+  font-weight: bold;
+}
+
+.wrapper_body {
+  width: 100%;
+}
+.ablemTable {
+  width: 100%;
+  padding: 2px;
+  border-spacing: 0;
+}
+.ablemTable th {
+  background: #eee;
+  color: gray;
+  font-weight: bold;
+  border-top: 1px solid gray;
+  border-bottom: 1px dashed gray;
+}
+.ablemTable td {
+  color: #0f465e;
+  border-bottom: 1px dashed gray;
+}
+.ablemTable_checkbox {
+  width: 5%;
+  text-align: center;
+}
+.ablemTable_number {
+  width: 20%;
+  text-align: center;
+}
+.ablemTable_song {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-left: 35px;
+  gap: 6px;
+}
+.fas {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  color: crimson;
+  font-size: 12px;
+  /* border: 1px solid gray; */
+  border-radius: 3px;
+  padding: 1px;
+  text-align: center;
+  line-height: 6px;
+}
+.ablemTable_artist {
+  width: 20%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.ablemTable_footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.ablemTable_footer button {
+  background: #ddd;
+  border: none;
+  padding: 3px;
+  margin-top: 2px;
+  cursor: pointer;
+  /* color: #fff; */
+  transition: all 0.3s;
+}
+.ablemTable_footer button:hover {
+  background: gray;
+}
+.ablemTable_footer_center {
+  color: crimson;
+}
