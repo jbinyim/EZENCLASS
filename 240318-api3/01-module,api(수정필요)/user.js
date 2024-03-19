@@ -5,7 +5,7 @@ const updateProfile = (userData) => {
 
   name.innerText = `${userData.name} (@${userData.username})`;
   email.innerText = userData.email;
-  email.href = `mailto${userData.email}`;
+  email.href = `mailto:${userData.email}`;
   website.innerText = userData.website;
   website.href = `https://${userData.website}`;
   website.target = "_blank";
@@ -13,15 +13,16 @@ const updateProfile = (userData) => {
 
 const getUserById = (id) => {
   const URL = `https://jsonplaceholder.typicode.com/users/${id}`;
+
   return fetch(URL)
     .then((response) => response.json())
     .then((data) => data);
 };
 
-const loaduserProfile = () => {
+const loadUserProfile = async () => {
   const userId = localStorage.getItem("userId");
-  const userData = getUserById(userId);
+  const userData = await getUserById(userId);
   updateProfile(userData);
 };
 
-loaduserProfile();
+loadUserProfile();

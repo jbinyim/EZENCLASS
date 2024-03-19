@@ -130,15 +130,13 @@ const saveList = (listId) => {
 };
 
 const dragstart = (e) => {
-  from = e.target.parentElement;
+  from = e.target.parentElement.id;
   to = from;
 };
 
 const dragover = (e) => {
-  const { id: targetId } = e.target.id;
+  const { id: targetId } = e.target;
   const listIds = Object.keys(lists);
-
-  console.log(listIds, targetId);
 
   if (listIds.includes(targetId)) {
     to = targetId;
@@ -167,10 +165,10 @@ const dragend = (e) => {
 
 const removeTodo = (e) => {
   e.preventDefault();
-  const { id } = e.target.id;
-  const { id: listId } = e.taraget.parentElement;
+  const { id } = e.target;
+  const { id: listId } = e.target.parentElement;
 
-  e.taraget.remove();
+  e.target.remove();
   lists[listId] = lists[listId].filter((todo) => {
     return todo.id !== id;
   });
@@ -199,7 +197,6 @@ const createTodo = (e) => {
   e.preventDefault();
 
   const input = document.querySelector("input[type='text']");
-
   // const id = String(Date.now());
   const id = uuidv4();
 
