@@ -1,0 +1,15 @@
+1. 기본개념
+- components
+- virtual DOM
+- CSR
+
+2. JSX 문법
+
+3. props 객체
+
+4. state 변수 : componenet 가 가지고 있는 상태값
+- 상태 값을 변경하려면 useState(): React Hooks 중 하나!!
+- form 태그 요소 안에 있는 기본적인 input태그 | textarea | seclet && option
+- 상태의 변화값을 check 하고 state변수값이 업데이트가 될 수 있도록 제어
+
+5. props & state 변수 동시에 활용
