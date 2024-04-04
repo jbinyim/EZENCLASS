@@ -13,11 +13,14 @@ a {
 
 .App {
   width: 100%;
+  height: 100%;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 20px;
-  border: 1px solid #808080;
+  /* border: 1px solid #808080; */
   display: flex;
   flex-direction: column;
   gap: 30px;
+  /* box-shadow: 0 0 10px; */
+  background: rgb(223, 242, 255);
 }

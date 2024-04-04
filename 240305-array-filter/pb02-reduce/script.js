@@ -141,7 +141,9 @@ const importData = () => {
   });
 };
 
-// importData(); 그냥 화면에 출력할때 버튼 없이
+// createItem(products);
+importData();
+// 그냥 화면에 출력할때 버튼 없이
 
 button.addEventListener("click", importData);
 asceButton.addEventListener("click", sortAsce);
