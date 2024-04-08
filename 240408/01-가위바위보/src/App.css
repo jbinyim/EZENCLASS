@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow-x: hidden;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+/* Box */
+.box {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.win {
+  border: 10px solid #000;
+  color: #f00;
+}
+.tie {
+  border: 10px solid burlywood;
+  color: burlywood;
+}
+
+.item-img {
+  width: 400px;
+}
+
+/* buttons */
+.container .main:last-child {
+  gap: 10px;
+}
+.main button {
+  width: 100px;
+  height: 50px;
+}
