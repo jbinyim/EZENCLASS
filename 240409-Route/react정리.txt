@@ -1,0 +1,19 @@
+* React.js
+- useState
+- useRef
+- useEffect
+- useMemo
+- useContext
+- useReducer
+
+- useParams
+= useSearchParams
+> Route
+> Routing
+> page routin 기능구현
+> 동적 라우팅 생성
+> mpa VS spa
+> SSR VS CSR 
+
+* 잡코리아 / 사람인
+F/E : RestFull API
