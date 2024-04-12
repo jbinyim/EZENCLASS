@@ -15,13 +15,13 @@ const mockData = [
   },
   {
     id: "mock2",
-    date: new Date().getTime(),
+    date: new Date().getTime() - 1,
     emoitonId: 2,
     content: "mock2",
   },
   {
     id: "mock3",
-    date: new Date().getTime(),
+    date: new Date().getTime() - 2,
     emoitonId: 3,
     content: "mock3",
   },
@@ -106,7 +106,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/new" element={<New />} />
             <Route path="/diary/:id" element={<Diary />} />
-            <Route path="/edit" element={<Edit />} />
+            <Route path="/edit/:id" element={<Edit />} />
           </Routes>
         </DiaryStateContext.Provider>
       </div>
