@@ -1,22 +1,23 @@
-import React, { useContext } from "react";
-import { DiaryDispathContext } from "../App";
+import React, { useContext, useEffect } from "react";
+import { DiaryDispatchContext } from "../App";
 import { useParams, useNavigate } from "react-router-dom";
 import useDiary from "../hooks/useDiary";
 import Header from "../component/Header";
 import Button from "../component/Button";
-import Editer from "../component/Editer";
+import Editor from "../component/Editor";
+import { setPageTitle } from "../util";
 
 const Edit = () => {
+  useEffect(() => {
+    setPageTitle("일기 수정하기");
+  });
   const { id } = useParams();
   const data = useDiary(id);
-
   const navigate = useNavigate();
-
   const goBack = () => {
     navigate(-1);
   };
-
-  const { onUpdate, onDelete } = useContext(DiaryDispathContext);
+  const { onUpdate, onDelete } = useContext(DiaryDispatchContext);
   const onClickDelete = () => {
     if (window.confirm("일기를 정말 삭제할까요? 다시 복구되지 않습니다.")) {
       onDelete(id);
@@ -25,9 +26,9 @@ const Edit = () => {
   };
   const onSubmit = (data) => {
     if (window.confirm("일기를 정말 수정할까요?")) {
-      const { date, emoitonId, content } = data;
-      onUpdate(id, date, emoitonId, content);
-      navigate("/");
+      const { date, emotionId, content } = data;
+      onUpdate(id, date, emotionId, content);
+      navigate("/", { replace: true });
     }
   };
   if (!data) {
@@ -36,13 +37,13 @@ const Edit = () => {
     return (
       <div>
         <Header
-          leftChild={<Button onClick={goBack} text="뒤로가기" />}
+          leftChild={<Button text="< 뒤로가기" onClick={goBack} />}
           title="일기 수정하기"
           rightChild={
             <Button type="negative" text="삭제하기" onClick={onClickDelete} />
           }
         />
-        <Editer initData={data} onSubmit={onSubmit} />
+        <Editor initData={data} onSubmit={onSubmit} />
       </div>
     );
   }

@@ -1,11 +1,11 @@
-import "./Editer.css";
-import { getFormattedDate, emotionList } from "../util";
-import Button from "./Button";
-import EmotionItem from "./EmotionItem";
 import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import Button from "./Button";
+import { getFormattedDate, emotionList } from "../util";
+import EmotionItem from "./EmotionItem";
+import "./Editor.css";
 
-const Editer = ({ initData, onSubmit }) => {
+const Editor = ({ initData, onSubmit }) => {
   const navigate = useNavigate();
   const [state, setState] = useState({});
   useEffect(() => {
@@ -16,18 +16,17 @@ const Editer = ({ initData, onSubmit }) => {
       });
     }
   }, [initData]);
-
   const handleChangeDate = (e) => {
     setState({
       ...state,
       date: e.target.value,
     });
   };
-  const handleChangeEmotion = useCallback((emoitonId) => {
-    setState({
+  const handleChangeEmotion = useCallback((emotionId) => {
+    setState((state) => ({
       ...state,
-      emoitonId,
-    });
+      emotionId,
+    }));
   }, []);
   const handleChangeContent = (e) => {
     setState({
@@ -41,7 +40,6 @@ const Editer = ({ initData, onSubmit }) => {
   const handleOnGoBack = () => {
     navigate(-1);
   };
-
   return (
     <div className="Editor">
       <div className="editor_section">
@@ -58,7 +56,7 @@ const Editer = ({ initData, onSubmit }) => {
               key={it.id}
               {...it}
               onClick={handleChangeEmotion}
-              isSelected={state.emoitonId === it.id}
+              isSelected={state.emotionId === it.id}
             />
           ))}
         </div>
@@ -81,4 +79,4 @@ const Editer = ({ initData, onSubmit }) => {
   );
 };
 
-export default Editer;
+export default Editor;

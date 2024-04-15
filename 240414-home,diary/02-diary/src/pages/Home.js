@@ -7,12 +7,8 @@ import { useState, useContext, useEffect } from "react";
 
 const Home = () => {
   const data = useContext(DiaryStateContext);
-
   const [pivotDate, setPivotDate] = useState(new Date());
   const [filteredData, setFilteredData] = useState([]);
-  useEffect(() => {
-    setPageTitle("감정일기장");
-  }, []);
   useEffect(() => {
     if (data.length >= 1) {
       const { beginTimeStamp, endTimeStamp } = getMonthRangeByDate(pivotDate);
@@ -25,10 +21,10 @@ const Home = () => {
       setFilteredData([]);
     }
   }, [pivotDate, data]);
-  const onIncreaseMonth = () => {
+  const onDecreaseMonth = () => {
     setPivotDate(new Date(pivotDate.getFullYear(), pivotDate.getMonth() - 1));
   };
-  const onDecreaseMonth = () => {
+  const onIncreaseMonth = () => {
     setPivotDate(new Date(pivotDate.getFullYear(), pivotDate.getMonth() + 1));
   };
   const headerTitle = `${pivotDate.getFullYear()}년 ${

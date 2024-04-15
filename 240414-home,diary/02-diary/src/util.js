@@ -30,7 +30,6 @@ export const getFormattedDate = (targetDate) => {
   if (month < 10) {
     month = `0${month}`;
   }
-
   if (date < 10) {
     date = `0${date}`;
   }
@@ -61,7 +60,7 @@ export const emotionList = [
   },
   {
     id: 5,
-    name: "완전나쁨",
+    name: "끔찍함",
     img: getEmotionImgById(5),
   },
 ];

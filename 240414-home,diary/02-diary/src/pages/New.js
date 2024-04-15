@@ -2,33 +2,31 @@ import React, { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../component/Header";
 import Button from "../component/Button";
-import Editer from "../component/Editer";
+import Editor from "../component/Editor";
 import { setPageTitle } from "../util";
-import { DiaryDispathContext } from "../App";
+import { DiaryDispatchContext } from "../App";
 
 const New = () => {
   useEffect(() => {
     setPageTitle("새 일기 쓰기");
-  }, []);
+  });
   const navigate = useNavigate();
   const goBack = () => {
     navigate(-1);
   };
-  const { onCreate } = useContext(DiaryDispathContext);
-
+  const { onCreate } = useContext(DiaryDispatchContext);
   const onSubmit = (data) => {
-    const { date, emoitonId, content } = data;
-    onCreate(date, emoitonId, content);
+    const { date, emotionId, content } = data;
+    onCreate(date, emotionId, content);
     navigate("/");
   };
-
   return (
     <div>
       <Header
-        leftChild={<Button onClick={goBack} text="뒤로가기" />}
+        leftChild={<Button onClick={goBack} text="< 뒤로가기" />}
         title="새 일기 쓰기"
       />
-      <Editer onSubmit={onSubmit} />
+      <Editor onSubmit={onSubmit} />
     </div>
   );
 };

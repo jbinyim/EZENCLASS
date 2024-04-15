@@ -1,5 +1,5 @@
 .Editor .editor_section {
-  margin: 20px 0 40px;
+  margin-bottom: 40px;
 }
 .Editor h4 {
   font-size: 22px;
@@ -8,8 +8,8 @@
 .Editor input,
 textarea {
   border: none;
-  background: #ececec;
   border-radius: 5px;
+  background: #ececec;
   padding: 20px;
   font-size: 20px;
   font-family: "Nanum Pen Script";
@@ -27,10 +27,8 @@ textarea {
   justify-content: space-between;
   align-items: center;
 }
-
 .Editor .emotion_list_wrapper {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   gap: 2%;
 }

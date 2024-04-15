@@ -1,28 +1,29 @@
 import "./App.css";
+import React, { useReducer, useRef, useEffect, useState } from "react";
+import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import New from "./pages/New";
 import Diary from "./pages/Diary";
 import Edit from "./pages/Edit";
-import React, { useReducer, useRef, useEffect, useState } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { type } from "@testing-library/user-event/dist/type";
 
 // const mockData = [
 //   {
 //     id: "mock1",
-//     date: new Date().getTime(),
-//     emoitonId: 1,
+//     date: new Date().getTime() - 1,
+//     emotionId: 1,
 //     content: "mock1",
 //   },
 //   {
 //     id: "mock2",
-//     date: new Date().getTime() - 1,
-//     emoitonId: 2,
+//     date: new Date().getTime() - 2,
+//     emotionId: 2,
 //     content: "mock2",
 //   },
 //   {
 //     id: "mock3",
-//     date: new Date().getTime() - 2,
-//     emoitonId: 3,
+//     date: new Date().getTime() - 3,
+//     emotionId: 3,
 //     content: "mock3",
 //   },
 // ];
@@ -46,7 +47,7 @@ const reducer = (state, action) => {
     }
     case "DELETE": {
       const newState = state.filter(
-        (it) => String(it.id) !== String(action.targetId)
+        (it) => String(it.id) !== String(action.targerId)
       );
       localStorage.setItem("diary", JSON.stringify(newState));
       return newState;
@@ -58,10 +59,10 @@ const reducer = (state, action) => {
 };
 
 export const DiaryStateContext = React.createContext();
-export const DiaryDispathContext = React.createContext();
+export const DiaryDispatchContext = React.createContext();
 
 function App() {
-  const [isDataLoded, setIsDataLoded] = useState(false);
+  const [isDataLoaded, setIsDataLoaded] = useState(false);
   const [data, dispatch] = useReducer(reducer, []);
   const idRef = useRef(0);
   // useEffect(() => {
@@ -69,17 +70,17 @@ function App() {
   //     type: "INIT",
   //     data: mockData,
   //   });
-  //   setIsDataLoded(true);
+  //   setIsDataLoaded(true);
   // }, []);
   useEffect(() => {
     const rawData = localStorage.getItem("diary");
     if (!rawData) {
-      setIsDataLoded(true);
+      setIsDataLoaded(true);
       return;
     }
     const localData = JSON.parse(rawData);
     if (localData.length === 0) {
-      setIsDataLoded(true);
+      setIsDataLoaded(true);
       return;
     }
     localData.sort((a, b) => Number(b.id) - Number(a.id));
@@ -88,59 +89,56 @@ function App() {
       type: "INIT",
       data: localData,
     });
-    setIsDataLoded(true);
+    setIsDataLoaded(true);
   }, []);
 
-  const onCreate = (date, emoitonId, content) => {
+  const onCreate = (date, emotionId, content) => {
     dispatch({
       type: "CREATE",
       data: {
         id: idRef.current,
         date: new Date(date).getTime(),
-        emoitonId,
+        emotionId,
         content,
       },
     });
     idRef.current += 1;
   };
 
-  const onUpdate = (targetId, date, emoitonId, content) => {
+  const onUpdate = (targerId, date, emotionId, content) => {
     dispatch({
       type: "UPDATE",
       data: {
-        id: targetId,
+        id: targerId,
         date: new Date(date).getTime(),
-        emoitonId,
+        emotionId,
         content,
       },
     });
   };
 
-  const onDelete = (targetId) => {
+  const onDelete = (targerId) => {
     dispatch({
       type: "DELETE",
-      targetId,
+      targerId,
     });
   };
-
-  if (!isDataLoded) {
-    return <div>데이터를 불러오는 중입니다</div>;
+  if (!isDataLoaded) {
+    return <div>데이터를 불러오는 중입니다.</div>;
   } else {
     return (
-      <div className="App">
-        <DiaryStateContext.Provider value={data}>
-          <DiaryDispathContext.Provider
-            value={{ onCreate, onDelete, onUpdate }}
-          >
+      <DiaryStateContext.Provider value={data}>
+        <DiaryDispatchContext.Provider value={{ onCreate, onUpdate, onDelete }}>
+          <div className="App">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/new" element={<New />} />
               <Route path="/diary/:id" element={<Diary />} />
               <Route path="/edit/:id" element={<Edit />} />
             </Routes>
-          </DiaryDispathContext.Provider>
-        </DiaryStateContext.Provider>
-      </div>
+          </div>
+        </DiaryDispatchContext.Provider>
+      </DiaryStateContext.Provider>
     );
   }
 }
