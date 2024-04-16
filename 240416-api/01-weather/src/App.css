@@ -1,0 +1,27 @@
+body {
+  background: url("https://getwallpapers.com/wallpaper/full/6/f/1/1369498-cool-best-weather-wallpaper-1920x1080-phone.jpg")
+    center/cover no-repeat;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100vh;
+}
+
+.weatherBox {
+  border: 3px solid #fff;
+  border-radius: 30px;
+  padding: 50px;
+  background: azure;
+}
+
+.weatherButton {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

@@ -1,0 +1,4 @@
+Rout
+
+react router dom 에 가서 먼저 설치
+index.js 에서 BrowserRouter import 후 app BrowserRouter로 감싸기

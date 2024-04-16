@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 const TodoEditor = ({ onCreate }) => {
   const [content, setContent] = useState("");
   const inputRef = useRef();
+
   const onChangeContent = (e) => {
     setContent(e.target.value);
   };
