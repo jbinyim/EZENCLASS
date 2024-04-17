@@ -1,0 +1,14 @@
+1. <Link> VS useNavigate()
+
+2. RestFul Routes
+- 페이지 라우팅을 생성. 실행: 비슷한 성격을 띄고 있는 페이지가 다수 필요한 경우, 페이지별 경로(파라미터를 독립적으로 모두 생성?)
+- 규칙을 갖고 있는 파라미터를 생성,기획 => 효율적으로 페이지 라우팅
+
+3. 쿼리 / ?
+-usesearchparams
+
+Private Route
+
+리액트 폰트어썸!!
+
+npm server
