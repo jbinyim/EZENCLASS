@@ -35,7 +35,7 @@ const NavBar = ({ authenticate, setAuthenticaste }) => {
             <span>로그아웃</span>
           </div>
         ) : (
-          <div onClick={() => setAuthenticaste(true)} className="login-menu">
+          <div onClick={() => navigate("/login")} className="login-menu">
             <FontAwesomeIcon icon={faUser} />
             <span>로그인</span>
           </div>

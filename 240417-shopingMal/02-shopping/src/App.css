@@ -67,3 +67,33 @@ li {
   outline: none;
   border-bottom: 1px solid #000;
 }
+
+/* productCard */
+.productCard {
+  padding: 20px 0;
+}
+.productCard img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* productDetail */
+.product-detail-img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.product-info {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.drop-down {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.add-product {
+  margin-top: 20px;
+  width: 100%;
+}

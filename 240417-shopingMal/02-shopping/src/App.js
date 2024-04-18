@@ -4,11 +4,15 @@ import Login from "./components/Login";
 import ProductAll from "./components/ProductAll";
 import ProductDetail from "./components/ProductDetail";
 import NavBar from "./components/NavBar";
+import PrivteRoute from "./components/PrivteRoute";
 import { Route, Routes } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [authenticate, setAuthenticaste] = useState(false);
+  useEffect(() => {
+    console.log(authenticate);
+  }, [authenticate]);
   return (
     <div className="App">
       <NavBar authenticate={authenticate} setAuthenticaste={setAuthenticaste} />
@@ -16,13 +20,11 @@ function App() {
         <Route path="/" element={<ProductAll />} />
         <Route
           path="/login"
-          element={<Login />}
-          setAuthenticaste={setAuthenticaste}
+          element={<Login setAuthenticaste={setAuthenticaste} />}
         />
         <Route
           path="/product/:id"
-          element={<ProductDetail />}
-          setAuthenticaste={setAuthenticaste}
+          element={<PrivteRoute authenticate={authenticate} />}
         />
       </Routes>
     </div>

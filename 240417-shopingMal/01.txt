@@ -11,4 +11,10 @@ Private Route
 
 리액트 폰트어썸!!
 
-npm server
+---- npm server or json server ----
+파일명이 db.json 무조건!!
+파일 위치는 src밖에 가장 밖에 있어야함
+
+1. npm install json-server
+2. npm install -g json-server@0.17.4
+3. json-server --watch db.json --port 3004
