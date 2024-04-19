@@ -2,7 +2,6 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Login from "./components/Login";
 import ProductAll from "./components/ProductAll";
-import ProductDetail from "./components/ProductDetail";
 import NavBar from "./components/NavBar";
 import PrivteRoute from "./components/PrivteRoute";
 import { Route, Routes } from "react-router-dom";
@@ -10,9 +9,7 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [authenticate, setAuthenticaste] = useState(false);
-  useEffect(() => {
-    console.log(authenticate);
-  }, [authenticate]);
+  useEffect(() => {}, [authenticate]);
   return (
     <div className="App">
       <NavBar authenticate={authenticate} setAuthenticaste={setAuthenticaste} />

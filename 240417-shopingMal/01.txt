@@ -18,3 +18,49 @@ Private Route
 1. npm install json-server
 2. npm install -g json-server@0.17.4
 3. json-server --watch db.json --port 3004
+
+
+-- json server 지우기 --
+npm uninstall -g json-server
+npm uninstall json-server
+
+-- json server 버전 바꾸기 --
+npm i -g json-server@0.17.0
+npm i json-server@0.17.0
+
+----------------------------------------------------------------------------------
+1. navbar
+- 로고
+- gnb
+- 상품 검색
+- 로그인
+
+(*로그인 버튼 크릭 => state)
+
+2. 상품정보
+- jsone-server
+- api
+
+3. 로그인 여부 > 상품상세페이지
+- Private Route
+
+4. 리액트 부트스크랩 & 폰트어썸
+- ui 구현 라이브러리
+
+5. 검색기능
+- json-server: restful api 형식
+
+6. 호스팅!!
+=> 서버 공간에 data 업로드
+- my json server (용량 제한 10mb)
+
+
+
+-----------배포*------\
+- netlify
+- filezila
+- cafe24
+- firebase
+- aws
+
+
