@@ -1,5 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ContactList from "./components/ContactList";
 import Contactform from "./components/Contactform";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -12,7 +13,9 @@ function App() {
           <Col>
             <Contactform />
           </Col>
-          <Col></Col>
+          <Col>
+            <ContactList />
+          </Col>
         </Row>
       </Container>
     </div>

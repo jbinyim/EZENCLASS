@@ -1,0 +1,72 @@
+*Redux
+- js의 라이브러리 => React.js
+- React.js의 라이브러리
+=> 동기적인 처리
+> 비동기적인 처리 => Redux Saga / Redux Thunk
+
+*설치
+- react redux
+- redux
+
+> Redux를 사용하지 않아도 
+React.js 문제 없음
+
+> if, F/E => Redux
+
+> useReducer()
+1. 컴포넌트 안에 
+const [state, dispatch] = useReducer(reducer, value)
+dispatch : 상태변화를 감지하는 촉발함수
+이벤트가 발생하게 되면 실행
+
+type & action 객체
+
+2. 컴포넌트 밖에서 대히하고 있는 reducer함수 > action 객체를 받아서 실제 실행!! 실행된 결과값을 컴포넌트 안에 state에게 값을 업데이트
+
+-----------------------------------------------------------------------------------------
+독립적인 state data 관리 시켜주고 싶음!!
+(* data 용량이 큼)
+
+-----------------------------------------------------------------------------------------
+* call *
+
+-설치-
+1. redux
+2. react redux
+3. bootstarp
+
+-UI관리하는 영역 => 이벤트 => 객체의 형태 정의
+(*useSelector)
+
+-dispatch(action 객체)
+
+-reducer
+
+- store(*데이터를 보관/ 저장 / 관리)
+
+> 장점
+- 컴포넌트간 data 전달: 일방향(*부모 => 자식)
+- props Drilling X
+
+---------------------------------------------------------------------------------------------
+
+Redux Middleware
+> Redux : 순차적으로 작동을 하는 매커니즘을 가지고 있음
+1) 이벤트
+2) 값 (*dispatch)
+3) reducer
+4) store
+5) UI
+
+Redux & API 데이터를 호출해와야하는 상황이 발생!!
+
+& 프로젝트에서 동시에 운영되어야하는 다른 기타 요소들과의 실생순서를 정의 => 비동기적으로 처리할 수 있어야 함,
+
+Hardware / software
+
+Middleware : 프로그래밍 과정 가운데 중간에서 어떠한 역할을 해주는 요소 컨셉 
+
+* 대표적인 redux 미들웨어 중 하나
+redux thunk : 작은 규모의 프로젝트
+redux saga : 큰 규모의 프로젝트
+
