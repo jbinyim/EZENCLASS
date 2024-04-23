@@ -1,0 +1,46 @@
+1. UI 화면 > 이벤트 => action
+> useSelector()
+
+2. dispatch(action)
+
+3. action (여러개 사용가능)
+
+3. reducer (여러개 사용가능)
+
+4. store
+
+*Redux middleware
+=> 탄생이유 : redux의 reducer를 비동기적으로 처리하기 위한 목적
+=> store에 저장되는 reducer 및 해당 reducer 내부에서 처리하고 있는 action 객체를 비동기적으로 처리하기 위해서 reducer && action객체를 분리 독립시킬 피룡가 발생
+
+
++ 복수의 reducer가 존재할 때 어떻게 처리해야하는가?
+
+combinereducers
+
+state 관리 : redux / react-query
+
+1. todolist
+2. 가위바위보
+3. emotion diary
+4. weather api
+5. 쇼핑몰
+6. 연락처 앱
+5-1. 쇼핑몰 redux
+
++
+넷플릭스 버전1
+mbti
+
++
+TS
+
++
+TS & React
+> 가상화페 사이트
+> 애니메이션 효과
+> 스타일컴포넌트
+> 슬라이드 & 모달효과
+> 칸반보드 (*드래그 & 드롭효과)
+>넷플릭스 버전2
+

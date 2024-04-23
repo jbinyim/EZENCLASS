@@ -1,18 +1,17 @@
 import ProductCard from "./ProductCard";
+import { productAction } from "../redux/actions/productAction";
 import { Container, Row, Col } from "react-bootstrap";
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom/dist";
+import { useDispatch, useSelector } from "react-redux";
 
 const ProductAll = () => {
-  const [productList, setProductList] = useState([]);
   const [query, setQuery] = useSearchParams();
-  const searchQuery = query.get("q") || "";
-
+  const dispatch = useDispatch();
+  const productList = useSelector((state) => state.product.productList);
   const getProducts = async () => {
-    const url = ` https://my-json-server.typicode.com/jbinyim/musinsa-project/products?q=${searchQuery}`;
-    const response = await fetch(url);
-    const data = await response.json();
-    setProductList(data);
+    const searchQuery = query.get("q") || "";
+    dispatch(productAction.getProducts(searchQuery));
   };
 
   useEffect(() => {
