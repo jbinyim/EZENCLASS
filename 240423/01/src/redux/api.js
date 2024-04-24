@@ -16,3 +16,16 @@ api.interceptors.request.use(
     return Promise.reject(error);
   }
 );
+
+api.interceptors.response.use(
+  function (response) {
+    console.log("get response", response);
+    return response;
+  },
+  function (error) {
+    console.log("response error", error);
+    return Promise.reject(error);
+  }
+);
+
+export default api;
