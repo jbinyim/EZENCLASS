@@ -16,7 +16,7 @@ const Home = () => {
 
   if (loading) {
     return (
-      <div className="slide">
+      <div className="loader">
         <ClipLoader
           color="#f00"
           loading={loading}
