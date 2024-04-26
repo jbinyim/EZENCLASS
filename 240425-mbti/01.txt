@@ -1,0 +1,57 @@
+mbtio 성향 파악
+
+성향에 따라서 어울리는 고양이 추천
+
+질문 12개
+
+ex) 
+
+stsyle components
+
+-------------------------------------------------------------------------
+react bootstrap
+react route dom
+styled-components
+
+
+ // if (type === "EI") {
+    //   const addScore = totalScore[0].score + num;
+    //   const newObject = { id: "EI", score: addScore };
+    //   totalScore.splice(0, 1, newObject);
+    // } else if (type === "SN") {
+    //   const addScore = totalScore[1].score + num;
+    //   const newObject = { id: "SN", score: addScore };
+    //   totalScore.splice(1, 1, newObject);
+    // } else if (type === "TF") {
+    //   const addScore = totalScore[2].score + num;
+    //   const newObject = { id: "TF", score: addScore };
+    //   totalScore.splice(2, 1, newObject);
+    // } else if (type === "JP") {
+    //   const addScore = totalScore[3].score + num;
+    //   const newObject = { id: "JP", score: addScore };
+    //   totalScore.splice(3, 1, newObject);
+    // }
+
+
+
+ // const handleClickBtnB = (num, type) => {
+  //   if (type === "EI") {
+  //     const addScore = totalScore[0].score + num;
+  //     const newObject = { id: "EI", score: addScore };
+  //     totalScore.splice(0, 1, newObject);
+  //   } else if (type === "SN") {
+  //     const addScore = totalScore[1].score + num;
+  //     const newObject = { id: "SN", score: addScore };
+  //     totalScore.splice(1, 1, newObject);
+  //   } else if (type === "TF") {
+  //     const addScore = totalScore[2].score + num;
+  //     const newObject = { id: "TF", score: addScore };
+  //     totalScore.splice(2, 1, newObject);
+  //   } else if (type === "JP") {
+  //     const addScore = totalScore[3].score + num;
+  //     const newObject = { id: "JP", score: addScore };
+  //     totalScore.splice(3, 1, newObject);
+  //   }
+
+  //   setQuestionNum(questionNum + 1);
+  // };

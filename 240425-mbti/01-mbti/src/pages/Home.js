@@ -1,6 +1,35 @@
 import React from "react";
 import styled from "styled-components";
-import catImage from "../assets/cat/abyssinian.jpg";
+import catImage from "../assets/ggompang.jpeg";
+import { useNavigate } from "react-router-dom";
+
+const Home = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/qusetion");
+  };
+  return (
+    <Wrapper>
+      <Header>예비집사 판별기</Header>
+      <Contents>
+        <Title>나에게 맞는 주인님은?</Title>
+        <LogoImage>
+          <img
+            className="rounded-circle"
+            width={350}
+            height={350}
+            src={catImage}
+            alt="catimg"
+          />
+        </LogoImage>
+        <Desc>Mpti 기반으로 하는 고양이 찾기</Desc>
+        <Button onClick={handleClick}>테스트 시작하기</Button>
+      </Contents>
+    </Wrapper>
+  );
+};
+
+export default Home;
 
 const Wrapper = styled.div`
   width: 100%;
@@ -52,27 +81,3 @@ const Button = styled.button`
   padding: 10px 20px;
   border-radius: 0 8px 0 8px;
 `;
-
-const Home = () => {
-  return (
-    <Wrapper>
-      <Header>예비집사 판별기</Header>
-      <Contents>
-        <Title>나에게 맞는 주인님은?</Title>
-        <LogoImage>
-          <img
-            className="rounded-circle"
-            width={350}
-            height={350}
-            src={catImage}
-            alt="catimg"
-          />
-        </LogoImage>
-        <Desc>Mpti 기반으로 하는 고양이 찾기</Desc>
-        <Button>테스트 시작하기</Button>
-      </Contents>
-    </Wrapper>
-  );
-};
-
-export default Home;
