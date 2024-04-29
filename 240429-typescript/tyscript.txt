@@ -1,0 +1,122 @@
+모든 프로그래밍은 언어는 거의 대부분 타입 시스템
+
+자바를 포함 c언어 등의 언어들은 변수를 선언할때 사전에 변수안에 담겨야할 값의 타입을 정의
+
+한 번 정의던 타입은 계속 고정되어서 간다
+사용자에게 어떤 숫자를 받는다
+숫자가 로컬스토리지에 갔다가 다시 웹브라우저에 도착
+해당 값을 찾아오는 순간 자료 형 변환
+
+JS : 단순히 웹브라우저에서 인터랙티브한 기능 구현
+Node.js : JS 서버구현 : 막대한 돈이 투입될 수 있는 프로젝트를 구현 
+
+TS: JS의 타입을 사전 지정할 수 있도록 도와주는 슈퍼셋
+(*super set) 언어
+
+TS는 어디에서 구현할 수 있으며 어떻게 사용하는가?
+=> 웹 브라우저는 Html css js
+=> scss 컴파일러
+=> 컴파일링 : Node에서 실행
+
+node 시작
+npm init => 노드 초기화(루트폴더안) 후 엔터 연속
+
+npm init -y (* 안물어보고 바로 만들어줌 yes를 알아서)
+
+npm i @types/node => 노드 안에있는 모든 시스템의 타입을 지정해라	TS : JS안에 있는 명령어 / 변수 / 값: 타입
+								Node : TS
+
+npm i typescript -g						TS 코드를 입력 => 웹 TS를 Js로 컴파일링 해주는 npm 앱
+tsc -v
+tscs src/index.ts							컴파일링 명령어 (폴더명/파일명)
+
+node src/index.js							컴파일된 js를 실행시키는 명령어
+
+* 타입스크립트의 파일을 컴파일링함과 동시에 node로 실행까지 한 번에 시켜줄수 있는 앱
+npm i ts-node
+npm i ts-node -g							설치
+
+ts-node src/index.ts						실행
+
+*Compliing Option
+: 상황에 따라서 어떤 경우 A 컴파일링/ B 컴파일링
+
+tsc --init								프로젝트 옵션 설정
+
+"include": ["src"]							tsc => src폴더 안에만 컴파일링하게 하는 옵션
+"target": "ESNext"							완료된 Js버전 결정하는 옵션 target
+"module": "ESNext",						commonJS > import = require / export = exports
+"outDir": "dist",							컴파일된 파일을 새로운 폴더로 만들어줌
+"strict": true,							매게변수에 any형식을 받을수 없게 해줌
+"moduleDetection": "force",						ts는 파일들이 다연결되어 있지만 옵션을넣어 각각으로 만들어줌
+"skipLibCheck": true						
+ "ts-node": {							모듈 선택 (ts)
+    "esm": true
+  },
+
+"type": "module",							모둘선택(json)
+npm i tsx								설치해야 모듈선택 가능
+npm i tsx -g
+
+tsx src/index.ts							실행
+
+"esModuleInterop": true,						모듈 충돌할 경우 변환하는 옵션
+"moduleResolution": "Node",						외부 라이브러리 모듈 충돌시 막아주는옵션
+"sourceMap": true,							컴파일링 경로를 알수있는 옵션
+ "downlevelIteration": true,						ts내에서 반복문을 사용할때 에러가 뜨지 않게 해주는 옵션
+"noImplicitAny": false,						임시적으로 any형식을 사용할수 있게 해줌(타입을 주지 않은)
+"allowJs": true,							ts에서 바닐라js를 가져올때 사용
+
+-----------------------------------------------------------------------------------
+1. TS를 사용해야하는 이유
+2. TS를 세팅하는 방법
+3. Ts Compiler Option 세팅하는 방법
+------------------------------------------------------------------------------------
+1. TS 주석
+- JS 타입 종류 : 
+1) 원시타입 : number, string, boolean, null, undefined
+2) 참조타입 : objecy, array, function
+
+2. TS 추론
+- 굳이 꼭 주석을 달지 않아도 됨
+(*하지만, 특별한 케이스)
+
+3. TS 치트키 (*any타입)
+
+4. TS 
+- JS VS => undefined / null : value
+- undefined / null : 타입
+
+5. TS 타입의 분류
+- Super Type : 받을 수 있는 값이 많아짐
+- Sub Type: 받을 수 있는 값이 적어짐
+
+6. TS 객체 타입정의
+- object => 객체계의 any임(*객체 치트키)
+- interface => 객체 안에 들어가있는 각각의 key & value 타입 정의
+- optional property = > 선택속성 (*객체안에 있어도 되고 없어도 되는 값에 대한 타입을 정희하고자 할 떄)
+- 익명 interface => 이름을 부여하지 않은 interface
+
+7. Class 타입 정의하기
+- 붕어빵틀 / 붕어빵
+- 동일한 혹은 유사한 형태의 객체가 많이 필요한 상황에서 매번 해당 객체를 신규로 생성해야하는 그 불편함을 해소하기 위해서 class
+- new Class()
+
+8. interface 응용
+- interface: 객체의 세부 타입 정의
+- class 선언 할 때 참고 활용
+- class가 interface를 참고해서 객체를 구현할 떄에는 implements
+(*implements : 실행하다)
+(*반드시 implement를 하기로한 인터페이스 객체를 구현)
+
+9. 추상클래스
+- 추상화
+- 추상 <-> 명쾌하지 않음
+- 어떤 사물이나 개념에서 공통점을 찾아서 추출한 형이상학적인 개념
+
+객체를 생성하는데 객체의 세부적인 값들이 완전히 똑같아야할 수도 있지만, 특정요소 몇가지만 다르고 나머지 70~80%는 거의 동일한 구성
+형태를 띄고 있는 객체를 만들어야하는 상황이 나올 수 있다
+
+
+
+
