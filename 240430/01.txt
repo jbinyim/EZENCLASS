@@ -1,0 +1,45 @@
+1. 노드 초기화 명령어(*질문생략)
+npm init -y
+
+2. 노드 내장함수 및 명령의 타입 정의
+npm i @types/node
+
+3. 타입스크립트 컴파일링 세팅 명령어
+npm i tsc
+npm i tsc -g
+
+4. 타입스크립트 컴파일링  & 실행 세팅 명령어
+npm i ts-node
+npm i ts-node -g
+
+5. 모듈 설정 후 컴파일링 & 실행 세팅 명령어
+npm i tsx
+npm i tsx -g
+
+-------------------------------
+6. 타입스크립트 컴파일러 옵션 세팅
+tsc -init
+
+
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "outDir": "dist",
+    "strict": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "allowJs": true,
+    "noImplicitAny": false
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": ["src"]
+}
+
+package.json =>   "type": "module",
