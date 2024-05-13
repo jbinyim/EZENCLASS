@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // 어떠한 컴파일링 모드
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "moduleDetection": "force",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noImplicitAny": true, // 타입정의 안한때 기본적으로 any줄지 말지
+    "noImplicitThis": false,
+    "jsx": "react-jsx"
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": ["src"]
+}
