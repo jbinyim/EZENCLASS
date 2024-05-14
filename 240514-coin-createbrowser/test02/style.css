@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+
+article {
+  width: 100%;
+  height: 100vh;
+  background: url("./img/background.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 800px;
+  height: 500px;
+  background: rgba(0, 0, 0, 50%);
+  color: #fff;
+}
+ul {
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  margin-top: 50px;
+}
+li {
+  width: 250px;
+  background: rgba(0, 0, 0, 50%);
+  box-shadow: 0 0 3px white;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.result {
+  text-align: center;
+  margin-top: 100px;
+}
