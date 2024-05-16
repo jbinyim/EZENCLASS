@@ -1,2 +1,8 @@
 react-query : 데이터 송수신에 대한 라이브러리
 passport : sns로그인 라이브러리
+
+Router: page Routing
+styled-components : theme 생성
+component page: Coins/Coin
+
+userMatch : Boolean(*True/Fasle)
