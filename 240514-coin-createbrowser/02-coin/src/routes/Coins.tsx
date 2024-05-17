@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Styled, { styled } from "styled-components";
 import { Link } from "react-router-dom";
+import { fetchCoins } from "../api";
+import { useQuery } from "react-query";
+import { Helmet } from "react-helmet";
 
 const Container = styled.div`
   padding: 20px;
@@ -92,36 +95,40 @@ interface CoinInterface {
 // ];
 
 const Coins = () => {
-  const [coins, setCoins] = useState<CoinInterface[]>([]);
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    // const data = async () => {
-    //   const response = await fetch(
-    //     "https://my-json-server.typicode.com/Divjason/coinlist/coins"
-    //   );
-    //   const json = await response.json();
-    //   console.log(json);
-    // };
-    (async () => {
-      const response = await fetch(
-        "https://my-json-server.typicode.com/Divjason/coinlist/coins"
-      );
-      const json = await response.json();
-      setCoins(json);
-      setLoading(false);
-    })();
-  }, []);
+  const { isLoading, data } = useQuery<CoinInterface[]>("allCoins", fetchCoins);
+  // const [coins, setCoins] = useState<CoinInterface[]>([]);
+  // const [loading, setLoading] = useState(true);
+  // useEffect(() => {
+  // const data = async () => {
+  //   const response = await fetch(
+  //     "https://my-json-server.typicode.com/Divjason/coinlist/coins"
+  //   );
+  //   const json = await response.json();
+  //   console.log(json);
+  // };
+  // (async () => {
+  //   const response = await fetch(
+  //     "https://my-json-server.typicode.com/Divjason/coinlist/coins"
+  //   );
+  //   const json = await response.json();
+  //   setCoins(json);
+  //   setLoading(false);
+  // })();
+  // }, []);
 
-  if (loading) {
+  if (isLoading) {
     return <Loader>loading</Loader>;
   } else {
     return (
       <Container>
+        <Helmet>
+          <title>Coin</title>
+        </Helmet>
         <Header>
           <Title>Coins Information</Title>
         </Header>
         <CoinList>
-          {coins.map((coin) => (
+          {data?.map((coin) => (
             <Coin key={coin.id}>
               <Link to={`/${coin.id}`} state={`${coin.name}`}>
                 {coin.rank}.
