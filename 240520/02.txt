@@ -1,0 +1,11 @@
+-Recoli  라이브러리 안에 있는 atom 의 default 값을 가져와서 사용하려면 리액트 훅
+useRecoilValue 
+
+
+
+* Recoil 라이브러리 안에 있는 atom의 default 값을 가져와서 편집 및 가공을 해서 사용하려면 리애특 훅
+useSetRecoilState
+
+useRecoilValue + useSetRecoilState => useRecoilState
+
+> Recoil 라이브러리를 사용해서 state 값을 관리할 때 Vs Props Drilling을 통해서 state값을 전달할떄 비교
