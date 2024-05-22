@@ -1,0 +1,18 @@
+npm beautiful-dnd
+
+가방 바깥영역은 반드시 <DragDropContext />
+실제 드래그가 가능하게 할 수 있도록 해주는 영역 설정 <Droppable />
+<Draggable>
+
+1) <Droppable /> & <Draggable>
+: 반드시 본인들만의 고유한 ID값을 가지고 있어야함
+
+2) <Droppable /> & <Draggable>
+: 자식요소 태그들은 함수의 반환값 형태가 되어야함
+
+3) <Draggable>
+: id + index값도 필요하다
+
+4) <Draggable>이 드래그 종료가 되는 시점에 함수 도출
+=> onDragEnd 함수
+(*이동한 지엄의 정보값을 알려주는 역할)

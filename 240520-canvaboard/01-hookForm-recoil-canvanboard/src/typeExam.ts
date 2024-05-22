@@ -130,6 +130,25 @@
 // // interface의 경우는 하나의 프로젝트 파일 내 동일한 이름을 갖고있는 타입정의가 있더라도 충돌되지 않는다
 // // type별칭의 경우는 동일한 네임에 사용된 겨우라면 재상요이 불가
 
+// enum Role {
+//   ADMIN = 0,
+//   USER = 1,
+//   GUEST = 2,
+// }
+
+// const user1 = {
+//   name: "Davivid",
+//   role: Role.ADMIN,
+// };
+// const user2 = {
+//   name: "Jane",
+//   role: Role.USER,
+// };
+// const user3 = {
+//   name: "Peter",
+//   role: Role.GUEST,
+// };
+
 // const test = () => {
 //   type Dog = {
 //     name: string;
