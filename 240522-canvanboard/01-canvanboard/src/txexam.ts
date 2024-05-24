@@ -214,3 +214,132 @@
 // getLength({
 //   length: 2,
 // });
+
+// 제네릭 타입 응용 : React.js => JSX 문법을 활용한 반복실행 처리 => map
+// 타입정의 허들
+// 기존 배열을 가져와서 어떤 연산작업 후 새로운 배열을 생성
+
+// const arr: number[] = [1, 2, 3];
+
+// const newArr = arr.map((it) => it * 2);
+// [2,4,6]
+
+// const map = (
+//   arr: unknown[],
+//   callback: (item: unknown) => unknown
+// ): unknown[] => {
+//   return [];
+// };
+
+// map 매서드 타입을 타입변수를 활용한 제네릭 형식으로 정의했을 때
+// const arr = [1, 2, 3];
+// const map = <T, U>(arr: T[], callback: (item: T) => U): U[] => {
+//   let result = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     result.push(callback(arr[i]));
+//   }
+//   return result;
+// };
+
+// // map(arr, (it) => it * 2);
+
+// map(arr, (it) => it.toString());
+
+// // forEach 메서드 타입 정의
+
+// const arr2 = [1, 2, 3];
+
+// arr2.forEach((it) => console.log(it));
+
+// const forEach = <T>(arr: T[], callback: (item: T) => void) => {
+//   for (let i = 0; i < arr.length; i++) {
+//     callback(arr[i]);
+//   }
+// };
+
+// // 제네릭 응용 : 인터페이스
+
+// interface KeyPair<K, T> {
+//   key: K;
+//   value: T;
+// }
+
+// let keyPair: KeyPair<string, number> = {
+//   key: "key",
+//   value: 0,
+// };
+
+// interface Map<V> {
+//   [key: string]: V;
+// }
+
+// let stringMap: Map<string> = {
+//   key: "value",
+// };
+
+// let stringMap01: Map<boolean> = {
+//   key: true,
+// };
+
+// type key2<V> = {
+//   [key: string]: V;
+// };
+
+// let stringMap2: key2<string> = {
+//   ket: "string",
+// };
+
+// // 제네릭 인터페이스를 활용한 또 다른 예제
+// interface Students {
+//   type: "student";
+//   school: string;
+// }
+
+// interface Developer {
+//   type: "developer";
+//   skill: string;
+// }
+
+// interface User<T> {
+//   name: string;
+//   profile: T;
+// }
+
+// const goToSchool = (user: User<Students>) => {
+//   if (user.profile.type !== "student") {
+//     console.log("잘 못 오셨습니다.");
+//     return;
+//   }
+
+//   const school = user.profile.school;
+//   console.log(`${school}로 등교 완료`);
+// };
+
+// const studentUser: User<Students> = {
+//   name: "Jane",
+//   profile: {
+//     type: "student",
+//     school: "sechik",
+//   },
+// };
+
+// // 제네릭 응용 => 제네릭 클래스
+
+// class List<T> {
+//   constructor(public list: T[]) {}
+
+//   push(data: T) {
+//     this.list.push(data);
+//   }
+
+//   pop() {
+//     return this.list.pop();
+//   }
+
+//   print() {
+//     console.log(this.list);
+//   }
+// }
+
+// const numberList = new List([1, 2, 3]);
+// const stringList = new List(["1", "2", "3"]);
