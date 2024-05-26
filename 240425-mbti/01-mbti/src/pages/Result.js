@@ -19,12 +19,11 @@ const Result = () => {
 
   return (
     <Wrapper>
-      <Header>😸예비집사 판별기 결과😸</Header>
+      <Header>연애 내면 테스트❤</Header>
       <Contents>
-        <Title>예비 집사님과 찰떡궁합인 고양이는?</Title>
         <LogoImage>
           <img
-            className="rounded-circle"
+            className="rounded"
             width={350}
             height={350}
             src={resultDate.image}
@@ -33,9 +32,7 @@ const Result = () => {
         </LogoImage>
         <TitleCat>
           <p>{resultDate.best}</p>
-          예비 집사님과 찰떡궁합인 고양이는 <p> "{resultDate.name}"</p>
         </TitleCat>
-        <Desc>{resultDate.desc}</Desc>
         <Button onClick={handleClick}>테스트 다시하기</Button>
       </Contents>
     </Wrapper>
@@ -51,7 +48,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #fffacd;
+  background: #ffeded;
 `;
 
 const Header = styled.div`
@@ -99,4 +96,5 @@ const Button = styled.button`
   border: none;
   padding: 10px 20px;
   border-radius: 0 8px 0 8px;
+  background: #fff582;
 `;

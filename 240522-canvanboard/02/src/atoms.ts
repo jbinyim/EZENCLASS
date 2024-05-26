@@ -10,6 +10,5 @@ export const toDoState = atom<IToDoState>({
     to_do: ["javascript", "typescript"],
     doing: ["html", "css", "react"],
     done: ["node"],
-    // do_later: ["x", "z"],
   },
 });

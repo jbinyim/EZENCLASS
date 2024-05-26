@@ -38,7 +38,7 @@ const Question = () => {
     <div>
       <ProgressBar
         striped
-        variant="danger"
+        variant="warning"
         now={(questionNum / QuestionData.length) * 100}
       />
       <Wrapper>
@@ -47,13 +47,25 @@ const Question = () => {
           <ButtonGroup>
             <Button
               onClick={() => handleClickBtn(1, QuestionData[questionNum].type)}
-              style={{ width: "400px", height: "200px", fontSize: "18px" }}
+              style={{
+                width: "350px",
+                height: "200px",
+                fontSize: "18px",
+                background: "#fff582",
+                color: "#000",
+              }}
             >
               {QuestionData[questionNum].answera}
             </Button>
             <Button
               onClick={() => handleClickBtn(0, QuestionData[questionNum].type)}
-              style={{ width: "400px", height: "200px", fontSize: "18px" }}
+              style={{
+                width: "350px",
+                height: "200px",
+                fontSize: "18px",
+                background: "#fff582",
+                color: "#000",
+              }}
             >
               {QuestionData[questionNum].answerb}
             </Button>
@@ -72,7 +84,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fffacd;
+  background: #ffeded;
 `;
 const Title = styled.div`
   font-size: 30px;
@@ -84,4 +96,10 @@ const ButtonGroup = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    button {
+      width: 300px;
+    }
+  }
 `;

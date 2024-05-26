@@ -1,6 +1,6 @@
 import api from "../api";
 
-const API_KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = "59b4be61d805cacbf60b7127d2470338";
 
 const getMovies = () => {
   return async (dispatch) => {
