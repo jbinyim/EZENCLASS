@@ -37,6 +37,7 @@ const Area = styled.div<IAreaProps>`
       : "#f5f7fa"};
   flex-grow: 1;
   padding: 10px;
+  transition: all 0.3s ease-in-out;
 `;
 
 interface IBoardProps {

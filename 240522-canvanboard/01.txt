@@ -16,3 +16,14 @@ npm beautiful-dnd
 4) <Draggable>이 드래그 종료가 되는 시점에 함수 도출
 => onDragEnd 함수
 (*이동한 지엄의 정보값을 알려주는 역할)
+
+Recoil: 
+todo 값을 저장 보관 출력
+(*초기: 문자열 형식)
+(*중기1: 문자열을 담고 있는 배열 형식)
+(*중기2: 배열을 담고 있는 객체 형식)
+> 보드3개 : ToDo / Doing / Done
+
+React-Hook-Form
+
+beautiful DnD
