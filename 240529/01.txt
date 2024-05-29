@@ -1,0 +1,12 @@
+*React.js 실행 
+> npx create-react-app . 명령어 => node / public / src 등등 폴더 및 파일들이 알아서 자동으로 생성
+> 수정을 원하는 영역 & 코드 편집
+>Boiler Plate 코드
+
+* 사용 npm
+- style-components
+- recoil
+- react-router-dom
+- react-query
+- framer-motion
+- react-hook-form
