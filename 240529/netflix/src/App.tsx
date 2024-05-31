@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
 import Home from "./routers/Home";
 import Tv from "./routers/Tv";
 import Search from "./routers/Search";
-import Header from "./components/Header";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Route path="/*" element={<Home />} />
         <Route path="/movies/:movieId" element={<Home />} />
         <Route path="/tv" element={<Tv />} />
-        <Route path="/search/:word" element={<Search />} />
+        <Route path="/search" element={<Search />} />
       </Routes>
     </BrowserRouter>
   );
