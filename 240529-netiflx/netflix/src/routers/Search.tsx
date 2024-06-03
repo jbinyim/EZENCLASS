@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useQuery } from "react-query";
 import { IGetmoviesResult, getGenRes, IGenRes } from "../api";
@@ -18,6 +18,8 @@ const SearchBox = styled.div`
   }
 `;
 
+const ContentSection = styled.div``;
+
 const SearchTitle = styled.div``;
 
 const SearchOverView = styled.div``;
@@ -29,6 +31,12 @@ const SearchValue = styled.div``;
 const SearchPoint = styled.div``;
 
 const SearchGenras = styled.div``;
+
+const ReviewSection = styled.div`
+  background: #f8f9fa;
+`;
+
+const ReviewTitle = styled.span``;
 
 const Search = () => {
   const location = useLocation();
@@ -53,8 +61,33 @@ const Search = () => {
     getGenRes
   );
 
-  console.log(genresData);
+  type ReviewState = {
+    [key: number]: string[];
+  };
+
+  const [reviews, setReviews] = useState<ReviewState>({});
+
+  const fetchReview = (movieId: number) => {
+    return fetch(
+      `${BASE_PATH}/movie/786892/reviews?language=en-US&page=1&api_key=${API_KEY}`
+    ).then((response) => response.json());
+  };
+
+  useEffect(() => {
+    if (data) {
+      data.results.forEach((movie) => {
+        fetchReview(movie.id).then((reviewData) =>
+          setReviews((prev) => ({
+            ...prev,
+            [movie.id]: reviewData.results.map((review: any) => review.content),
+          }))
+        );
+      });
+    }
+  }, [data]);
+
   const isLoading = moviesLoading || genResLoading;
+
   return (
     <div>
       {isLoading ? (
@@ -80,19 +113,40 @@ const Search = () => {
               </SearchValue>
               <SearchPoint>
                 <span>영화 평점</span>
-                {movie.vote_average.toFixed(2)}(
-                {movie.vote_count.toLocaleString("ko-kr")}명 투표 참여)
+                {movie?.vote_average !== undefined
+                  ? movie?.vote_average.toFixed(2)
+                  : "N/A"}
+                {movie?.vote_count
+                  ? movie?.vote_count.toLocaleString("ko-kr")
+                  : "0"}
               </SearchPoint>
               <SearchGenras>
                 <span>장르</span>
                 {/* {movie.genre_ids
-                  .map(
-                    (id) =>
-                      genresData?.genres.find((item) => item.id === id).name
-                  )
-                  .filter((name) => name.join(","))} */}
+                  ? movie.genre_ids
+                      .map(
+                        (id) =>
+                          genresData?.genres.find((item) => item.id === id).name
+                      )
+                      .filter((name) => name.join(","))
+                  : "N/A"} */}
               </SearchGenras>
             </div>
+            <ReviewSection>
+              <h3>Review</h3>
+              {reviews[movie.id]?.length > 0 ? (
+                reviews[movie.id].map((content, reviewIdx) => (
+                  <p key={reviewIdx}>
+                    <div>
+                      <ReviewTitle>User Talk</ReviewTitle>
+                      {content}
+                    </div>
+                  </p>
+                ))
+              ) : (
+                <p>No Reviews Available</p>
+              )}
+            </ReviewSection>
           </SearchBox>
         ))
       )}
