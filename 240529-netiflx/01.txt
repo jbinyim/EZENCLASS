@@ -10,3 +10,6 @@
 - react-query
 - framer-motion
 - react-hook-form
+- react youtube
+
+* tmdb > 영화아이디를 활용해서 재생할 수 잇도록 도와주는 URL
